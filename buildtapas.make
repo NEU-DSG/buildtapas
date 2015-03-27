@@ -4,7 +4,7 @@ core = 7.35
 ; Contributed modules key dependencies
 projects[ctools][subdir] = contrib
 projects[views][subdir] = contrib
-projects[actions_permissions][subdir] = contrib
+projects[views_bulk_operations][subdir] = contrib
 projects[og][subdir] = contrib
 projects[features][subdir] = contrib
 projects[rules][subdir] = contrib
