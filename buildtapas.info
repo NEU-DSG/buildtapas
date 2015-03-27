@@ -1,0 +1,118 @@
+
+name = Build Tapas
+description = For deploying and setting up test environments for the TAPAS website
+theme = bartik
+base = minimal
+
+
+; -----------------------------------------------------------------------------
+;                                  Modules
+; -----------------------------------------------------------------------------
+; List the modules (core, contrib and/or features) to be enabled in the
+; dependencies[] array. Any dependencies of the listed modules will be detected
+; and enabled automatically.
+; -----------------------------------------------------------------------------
+
+
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contact
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = forum
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+
+; Administration
+dependencies[] = actions_permissions
+dependencies[] = admin_menu
+dependencies[] = module_filter
+; Chaos tool suite
+dependencies[] = ctools
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+; Development
+dependencies[] = profiler_builder
+dependencies[] = profiler_builder_extras
+; Fields
+dependencies[] = addressfield
+dependencies[] = entityreference
+dependencies[] = link
+dependencies[] = name
+; Homebox
+dependencies[] = homebox
+dependencies[] = homebox_og
+; Organic groups
+dependencies[] = og
+dependencies[] = og_access
+dependencies[] = og_context
+dependencies[] = og_register
+dependencies[] = og_ui
+; Other
+dependencies[] = entity
+; Views
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+
+; -----------------------------------------------------------------------------
+;                                   Users
+; -----------------------------------------------------------------------------
+; One other thing to note here is that there's this (handy) quirk in Drupal's 
+; install API in that you can bypass the configuration form during installation
+; (where you'd normally set up user 1 credentials and the site name and such).
+; To do this you need to specify credentials for user 1 and also specify the
+; site name and site email variables (@see Variables below). 
+; -----------------------------------------------------------------------------
+
+users[superduper][uid]    = 1
+users[superduper][name]   = admin
+users[superduper][mail]   = l.moss@neu.edu
+users[superduper][roles]  = Admin,Publisher
+users[superduper][status] = 1
+
+users[siteadmin][uid]    = 2
+users[siteadmin][name]   = siteadmin
+users[siteadmin][mail]   = l.moss@neu.edu
+users[siteadmin][roles]  = Admin,Publisher
+users[siteadmin][status] = 1
+
+; -----------------------------------------------------------------------------
+;                                  Variables
+; -----------------------------------------------------------------------------
+; These variables should be pretty self explanatory, as they are just an array
+; of key value pairs for items in the variable table. Nested arrays also can 
+; crop up here, since variables can be arrays.
+;
+; Also, make note of the site_name and site_mail variables below. These 
+; variables need to be set if you want to bypass the Configuration form during 
+; installation (@see Users for more information on how this is accomplished).
+; -----------------------------------------------------------------------------
+variables[site_name] = TAPAS Project
+variables[site_mail] = l.moss@neu.edu
