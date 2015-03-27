@@ -4,8 +4,11 @@ The Drupal build profile and drush makefile for installing the tapas project.
 Copy and paste the following into a plaintext file named tapas.make:
 
 ```
-core = 7.35
 api = 2
+core = 7.35
+
+projects[drupal][type] = core
+projects[drupal][version] = 7.35
 
 projects[buildtapas][type] = profile
 projects[buildtapas][download][type] = git
