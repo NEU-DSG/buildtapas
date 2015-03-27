@@ -5,8 +5,8 @@ Copy and paste the following into a plaintext file named tapas.make:
 
 ```
 api = 2
-core = 7.35
 
+core = 7.35
 projects[drupal][type] = core
 projects[drupal][version] = 7.35
 

@@ -1,4 +1,5 @@
 api = 2
+core = 7.35
 
 ; Contributed modules key dependencies
 projects[ctools][subdir] = contrib
