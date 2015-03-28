@@ -1,19 +1,15 @@
 # buildtapas
 The Drupal build profile and drush makefile for installing the tapas project.
 
-Copy and paste the following into a plaintext file named tapas.make:
+## instructions
 
-```
-api = 2
+  1. Download the buildtapas.sh file (yes, ONLY this file. It will clone/download/create everything else that it needs).
+  2. Place it in the location where you want to install Drupal
+  3. The five parameters are:
+     * Username for exisiting MySQL account with sufficient permissions to create a new database
+	  * The password for above MySQL account
+	  * The name of the new drupal database to create
+	  * the name of the new user to create for drupal to use to access this new database
+	  * The new password that drupal should use to log in as the above-mentioned new user.
 
-core = 7.35
-projects[drupal][type] = core
-projects[drupal][version] = 7.35
-
-projects[buildtapas][type] = profile
-projects[buildtapas][download][type] = git
-projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas
-
-```
-
-(Instructions coming for how to run the tapas make file to pull down Drupal, the modules, and this installation profile using drush)
+I apologize for the lengthy command line, but it should be obvious why none of these parameters can be stored in a publically accessible file.
