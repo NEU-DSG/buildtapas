@@ -13,3 +13,6 @@ The Drupal build profile and drush makefile for installing the tapas project.
 	  * The new password that drupal should use to log in as the above-mentioned new user.
 
 I apologize for the lengthy command line, but it should be obvious why none of these parameters can be stored in a publically accessible file.
+
+
+The website login will be username `admin` with a randomly generated password which will be shown at the end of the install process.
