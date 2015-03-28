@@ -54,5 +54,5 @@ mysql -u $1 -p$2 -e"set @dbname='$3'; set @uname='$4'; set @pw='$5';  `cat profi
 #    * enable modules
 #    * miscelaneous installation tasks
 
-drush -y si buildtapas;
+drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3
 
