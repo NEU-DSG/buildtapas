@@ -44,7 +44,7 @@ drush -y make stub.make;
 
 ## IV. Create the Drupal database
 
-mysql -u $1 -p $2 -e"set @dbname='$3'; set @uname='$4'; set @pw='$5';  `cat profiles/buildtapas/buildtapas_database.sql`";
+mysql -u $1 -p$2 -e"set @dbname='$3'; set @uname='$4'; set @pw='$5';  `cat profiles/buildtapas/buildtapas_database.sql`";
 
 
 ## V. Run the installation script.
