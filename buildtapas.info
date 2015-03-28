@@ -49,7 +49,6 @@ dependencies[] = user
 ; Administration
 dependencies[] = actions_permissions
 dependencies[] = admin_menu
-dependencies[] = module_filter
 ; Chaos tool suite
 dependencies[] = ctools
 ; Date/Time
@@ -57,7 +56,6 @@ dependencies[] = date
 dependencies[] = date_api
 ; Development
 dependencies[] = profiler_builder
-dependencies[] = profiler_builder_extras
 ; Fields
 dependencies[] = addressfield
 dependencies[] = entityreference

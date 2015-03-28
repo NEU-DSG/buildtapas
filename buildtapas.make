@@ -19,7 +19,6 @@ projects[name][subdir] = contrib
 
 ; Administrative
 projects[admin_menu][subdir] = contrib
-projects[module_filter][subdir] = contrib
 
 ; Additional modules
 projects[homebox][subdir] = contrib
