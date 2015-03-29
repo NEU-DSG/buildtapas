@@ -73,8 +73,8 @@ dependencies[] = views_ui
 
 ; Other
 dependencies[] = features
-dependencies[] = homebox
-dependencies[] = homebox_og
+; dependencies[] = homebox
+; dependencies[] = homebox_og
 
 ; Custom
 ;dependencies[] = tapasupload
