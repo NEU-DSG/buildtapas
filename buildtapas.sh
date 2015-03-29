@@ -38,6 +38,14 @@ echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
 
+echo "Continue to drush make?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) break;;
+        No ) exit;;
+    esac
+done
+
 ## III. Run the stub.make
 echo "=============================================="
 echo "Run drush make on the stub.make..."
@@ -52,13 +60,31 @@ echo "=============================================="
 drush -y make stub.make;
 
 
+
+echo "Continue to create database?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) break;;
+        No ) exit;;
+    esac
+done
+
 ## IV. Create the Drupal database
 echo "=============================================="
 echo "Create the empty drupal database in mysql..."
 echo "=============================================="
+echo "command: mysql -u $1 -p$2 -e\"set @dbname='$3'; set @uname='$4'; set @pw='$5';  `cat profiles/buildtapas/buildtapas_database.sql`\"";
+
 mysql -u $1 -p$2 -e"set @dbname='$3'; set @uname='$4'; set @pw='$5';  `cat profiles/buildtapas/buildtapas_database.sql`";
 
 
+echo "Continue to run instalation script?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) break;;
+        No ) exit;;
+    esac
+done
 ## V. Run the installation script.
 echo "=============================================="
 echo "Run drush site-install on the buildtapas profile...."
@@ -67,9 +93,16 @@ echo "=============================================="
 #    * Install drupal
 #    * enable modules
 #    * miscelaneous installation tasks
-
+echo "Command: drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3"
 drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3
 
+echo "Continue to rebuild permissions?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) break;;
+        No ) exit;;
+    esac
+done
 ## VI. Rebuild permissions
 echo "=============================================="
 echo "Rebuilding permissions...."
