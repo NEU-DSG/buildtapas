@@ -55,7 +55,7 @@ dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_api
 ; Development
-dependencies[] = profiler_builder
+;dependencies[] = profiler_builder
 ; Fields
 ;dependencies[] = addressfield
 dependencies[] = entityreference
