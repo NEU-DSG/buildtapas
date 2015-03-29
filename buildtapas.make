@@ -37,5 +37,5 @@ projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
 
 projects[tapas-themes][type] = theme
 projects[tapas-themes][download][type] = git
-projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-modules
+projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-theme
 
