@@ -1,9 +1,8 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-theme = bartik
-base = minimal
-
+core = 7.x
+exclusive = true
 
 ; -----------------------------------------------------------------------------
 ;                                  Modules
@@ -46,74 +45,37 @@ dependencies[] = toolbar
 dependencies[] = update
 dependencies[] = user
 
-; Administration
-dependencies[] = actions_permissions
-dependencies[] = admin_menu
-; Chaos tool suite
-dependencies[] = ctools
-; Date/Time
-dependencies[] = date
-dependencies[] = date_api
-; Development
-;dependencies[] = profiler_builder
-; Fields
-;dependencies[] = addressfield
-dependencies[] = entityreference
-dependencies[] = link
-dependencies[] = name
-; Homebox
-;dependencies[] = homebox
-;dependencies[] = homebox_og
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
 dependencies[] = og_context
-dependencies[] = og_register
 dependencies[] = og_ui
-; Other
+
+; Key
+dependencies[] = ctools
 dependencies[] = entity
+dependencies[] = entityreference
+
+; Fields
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = link
+dependencies[] = name
+
+; Administration
+dependencies[] = admin_menu
+
 ; Views
 dependencies[] = views
 dependencies[] = views_bulk_operations
+; dependencies[] = actions_permissions
 dependencies[] = views_ui
-; Features
+
+; Other
 dependencies[] = features
+dependencies[] = homebox
+dependencies[] = homebox_og
 
 ; Custom
 ;dependencies[] = tapasupload
 
-; -----------------------------------------------------------------------------
-;                                   Users
-; -----------------------------------------------------------------------------
-; One other thing to note here is that there's this (handy) quirk in Drupal's 
-; install API in that you can bypass the configuration form during installation
-; (where you'd normally set up user 1 credentials and the site name and such).
-; To do this you need to specify credentials for user 1 and also specify the
-; site name and site email variables (@see Variables below). 
-; -----------------------------------------------------------------------------
-
-users[superduper][uid]    = 1
-users[superduper][name]   = admin
-users[superduper][mail]   = l.moss@neu.edu
-users[superduper][roles]  = Admin,Publisher
-users[superduper][status] = 1
-
-users[siteadmin][uid]    = 2
-users[siteadmin][name]   = siteadmin
-users[siteadmin][mail]   = l.moss@neu.edu
-users[siteadmin][roles]  = Admin,Publisher
-users[siteadmin][status] = 1
-
-; -----------------------------------------------------------------------------
-;                                  Variables
-; -----------------------------------------------------------------------------
-; These variables should be pretty self explanatory, as they are just an array
-; of key value pairs for items in the variable table. Nested arrays also can 
-; crop up here, since variables can be arrays.
-;
-; Also, make note of the site_name and site_mail variables below. These 
-; variables need to be set if you want to bypass the Configuration form during 
-; installation (@see Users for more information on how this is accomplished).
-; -----------------------------------------------------------------------------
-variables[site_name] = TAPAS Project
-variables[site_mail] = l.moss@neu.edu

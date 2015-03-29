@@ -25,7 +25,6 @@ projects[admin_menu][subdir] = contrib
 
 ; Dev modules
 projects[devel][subdir] = develop
-;projects[profiler_builder][subdir] = develop
 ;projects[checklistapi][subdir] = develop
 ;projects[qa_checklist][subdir] = develop
 projects[advanced_help][subdir] = develop
