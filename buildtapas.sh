@@ -32,7 +32,7 @@ echo "projects[drupal][version] = 7.35" >> stub.make;
 echo "" >> stub.make;
 echo "; See https://www.drupal.org/node/1432374 for path info. legacy" >> stub.make;
 echo "; check causes problems with custom profiles." >> stub.make;
-echo "projects[drupal][path][]https://www.drupal.org/files/1093420-22.patch" >> stub.make;
+echo "projects[drupal][patch][]https://www.drupal.org/files/1093420-22.patch" >> stub.make;
 echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
