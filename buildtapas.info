@@ -79,6 +79,9 @@ dependencies[] = views_ui
 ; Features
 dependencies[] = features
 
+; Custom
+dependencies[] = tapasupload
+
 ; -----------------------------------------------------------------------------
 ;                                   Users
 ; -----------------------------------------------------------------------------
