@@ -17,16 +17,16 @@ exclusive = true
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
-dependencies[] = contact
+;dependencies[] = contact
 dependencies[] = contextual
-dependencies[] = dashboard
+;dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field
 dependencies[] = field_sql_storage
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = filter
-dependencies[] = forum
+;dependencies[] = forum
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
@@ -41,7 +41,7 @@ dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = toolbar
+;dependencies[] = toolbar
 dependencies[] = update
 dependencies[] = user
 
@@ -51,7 +51,7 @@ dependencies[] = og_access
 dependencies[] = og_context
 dependencies[] = og_ui
 
-; Key
+; Ctools & entities
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = entityreference
@@ -68,7 +68,6 @@ dependencies[] = admin_menu
 ; Views
 dependencies[] = views
 dependencies[] = views_bulk_operations
-; dependencies[] = actions_permissions
 dependencies[] = views_ui
 
 ; Other
