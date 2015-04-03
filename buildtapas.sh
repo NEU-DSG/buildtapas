@@ -25,7 +25,7 @@ echo "=============================================="
 echo "Creating stub.make file..."
 echo "=============================================="
 echo "api = 2" > stub.make;
-echo "core = 7.35" >> stub.make;
+echo "core = 7.36" >> stub.make;
 echo "" >> stub.make;
 echo "projects[drupal][type] = core" >> stub.make;
 echo "projects[drupal][version] = 7.35" >> stub.make;
