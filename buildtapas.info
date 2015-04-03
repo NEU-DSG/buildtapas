@@ -82,7 +82,7 @@ dependencies[] = devel_node_access
 dependencies[] = advanced_help
 
 ; Custom
-dependencies[] = tapas_project
-dependencies[] = tapas_collection
-dependencies[] = tapas_tinythumb
+dependencies[] = feature_tapas_project
+dependencies[] = feature_tapas_collection
+dependencies[] = feature_tapas_tinythumb
 
