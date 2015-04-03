@@ -76,4 +76,3 @@ echo "=============================================="
 echo "Rebuilding permissions and updating variables...."
 echo "=============================================="
 drush php-eval 'node_access_rebuild();'
-drush vset site_name "TAPAS Project"
