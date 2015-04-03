@@ -73,6 +73,7 @@ drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass
 
 ## VI. Rebuild permissions
 echo "=============================================="
-echo "Rebuilding permissions...."
+echo "Rebuilding permissions and updating variables...."
 echo "=============================================="
 drush php-eval 'node_access_rebuild();'
+drush vset site_name "TAPAS Project"
