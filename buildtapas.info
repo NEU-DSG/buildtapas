@@ -72,8 +72,8 @@ dependencies[] = views_ui
 
 ; Other
 dependencies[] = features
-; dependencies[] = homebox
-; dependencies[] = homebox_og
+dependencies[] = homebox
+;dependencies[] = homebox_og
 
 ; Development
 dependencies[] = devel
@@ -82,5 +82,6 @@ dependencies[] = devel_node_access
 dependencies[] = advanced_help
 
 ; Custom
-;dependencies[] = tapasupload
+dependencies[] = tapas_project
+dependencies[] = tapas_collection
 

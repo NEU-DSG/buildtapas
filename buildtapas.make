@@ -21,7 +21,7 @@ projects[name][subdir] = contrib
 projects[admin_menu][subdir] = contrib
 
 ; Additional modules
-;projects[homebox][subdir] = contrib
+projects[homebox][subdir] = contrib
 
 ; Dev modules
 projects[devel][subdir] = develop
@@ -30,9 +30,9 @@ projects[devel][subdir] = develop
 projects[advanced_help][subdir] = develop
 
 ; custom 
-;projects[tapas-modules][type] = module
-;projects[tapas-modules][download][type] = git
-;projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
+projects[tapas-modules][type] = module
+projects[tapas-modules][download][type] = git
+projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
 
 projects[tapas-themes][type] = theme
 projects[tapas-themes][download][type] = git

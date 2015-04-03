@@ -6,7 +6,7 @@
  */
 function buildtapas_install() {
   include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
-  minimal_install();
+  //minimal_install();
 
 
 	// Text filters from standard install.
