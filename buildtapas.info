@@ -84,4 +84,5 @@ dependencies[] = advanced_help
 ; Custom
 dependencies[] = tapas_project
 dependencies[] = tapas_collection
+dependencies[] = tapas_tinythumb
 
