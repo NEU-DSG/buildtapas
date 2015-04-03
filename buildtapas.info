@@ -48,7 +48,7 @@ dependencies[] = user
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
-dependencies[] = og_context
+;dependencies[] = og_context
 dependencies[] = og_ui
 
 ; Ctools & entities
@@ -74,6 +74,12 @@ dependencies[] = views_ui
 dependencies[] = features
 ; dependencies[] = homebox
 ; dependencies[] = homebox_og
+
+; Development
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = devel_node_access
+dependencies[] = advanced_help
 
 ; Custom
 ;dependencies[] = tapasupload
