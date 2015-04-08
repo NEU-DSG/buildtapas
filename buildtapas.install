@@ -94,36 +94,36 @@ function _buildtapas_textfilters()
  *    (copied from standard profile)
  **/
 
-function _buildtapas_rdf()
-{
-  // Insert default pre-defined RDF mapping into the database.
-  $rdf_mappings = array(
-    array(
-      'type' => 'node',
-      'bundle' => 'page',
-      'mapping' => array(
-        'rdftype' => array('foaf:Document'),
-      ),
-    ),
-    array(
-      'type' => 'node',
-      'bundle' => 'article',
-      'mapping' => array(
-        'field_image' => array(
-          'predicates' => array('og:image', 'rdfs:seeAlso'),
-          'type' => 'rel',
-        ),
-        'field_tags' => array(
-          'predicates' => array('dc:subject'),
-          'type' => 'rel',
-        ),
-      ),
-    ),
-  );
-  foreach ($rdf_mappings as $rdf_mapping) {
-    rdf_mapping_save($rdf_mapping);
-  }
-}
+//function _buildtapas_rdf()
+//{
+  //// Insert default pre-defined RDF mapping into the database.
+  //$rdf_mappings = array(
+    //array(
+      //'type' => 'node',
+      //'bundle' => 'page',
+      //'mapping' => array(
+        //'rdftype' => array('foaf:Document'),
+      //),
+    //),
+    //array(
+      //'type' => 'node',
+      //'bundle' => 'article',
+      //'mapping' => array(
+        //'field_image' => array(
+          //'predicates' => array('og:image', 'rdfs:seeAlso'),
+          //'type' => 'rel',
+        //),
+        //'field_tags' => array(
+          //'predicates' => array('dc:subject'),
+          //'type' => 'rel',
+        //),
+      //),
+    //),
+  //);
+  //foreach ($rdf_mappings as $rdf_mapping) {
+    //rdf_mapping_save($rdf_mapping);
+  //}
+//}
 
 /**
  * Create a default vocabulary named 'Tags'
