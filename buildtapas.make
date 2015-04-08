@@ -34,6 +34,7 @@ projects[advanced_help][subdir] = develop
 projects[tapas-modules][type] = module
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
+projects[tapas-modules][download][branch] = feature_tei_upload
 
 projects[tapas-themes][type] = theme
 projects[tapas-themes][download][type] = git

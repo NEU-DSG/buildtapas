@@ -1,6 +1,4 @@
 #!/bin/bash
-$BRANCH = 'develop';
-
 
 ## I. Usage statement
 if [ "$5" == "" ]
@@ -40,7 +38,7 @@ echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
-echo "projects[buildtapas][download][branch] = $BRANCH" >> stub.make
+echo "projects[buildtapas][download][branch] = development" >> stub.make
 
 ## III. Run the stub.make
 echo "=============================================="
