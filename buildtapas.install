@@ -12,7 +12,7 @@ function buildtapas_install() {
 	// Text filters from standard install.
 	_buildtapas_textfilters();
 	//_buildtapas_rdf();
-	_buildtapas_tags();
+	//_buildtapas_tags();
 	_buildtapas_adminrole();
 
 	variable_set('site_name', 'TAPAS Project');
@@ -130,57 +130,57 @@ function _buildtapas_textfilters()
  *    (Copied from standard profile)
  **/
 
-function _buildtapas_tags()
-{
-  // Create a default vocabulary named "Tags", enabled for the 'article' content type.
-  $description = st('Use tags to group articles on similar topics into categories.');
-  $vocabulary = (object) array(
-    'name' => st('Tags'),
-    'description' => $description,
-    'machine_name' => 'tags',
-  );
-  taxonomy_vocabulary_save($vocabulary);
+//function _buildtapas_tags()
+//{
+  //// Create a default vocabulary named "Tags", enabled for the 'article' content type.
+  //$description = st('Use tags to group articles on similar topics into categories.');
+  //$vocabulary = (object) array(
+    //'name' => st('Tags'),
+    //'description' => $description,
+    //'machine_name' => 'tags',
+  //);
+  //taxonomy_vocabulary_save($vocabulary);
 
-  $field = array(
-    'field_name' => 'field_' . $vocabulary->machine_name,
-    'type' => 'taxonomy_term_reference',
-    // Set cardinality to unlimited for tagging.
-    'cardinality' => FIELD_CARDINALITY_UNLIMITED,
-    'settings' => array(
-      'allowed_values' => array(
-        array(
-          'vocabulary' => $vocabulary->machine_name,
-          'parent' => 0,
-        ),
-      ),
-    ),
-  );
-  field_create_field($field);
+  //$field = array(
+    //'field_name' => 'field_' . $vocabulary->machine_name,
+    //'type' => 'taxonomy_term_reference',
+    //// Set cardinality to unlimited for tagging.
+    //'cardinality' => FIELD_CARDINALITY_UNLIMITED,
+    //'settings' => array(
+      //'allowed_values' => array(
+        //array(
+          //'vocabulary' => $vocabulary->machine_name,
+          //'parent' => 0,
+        //),
+      //),
+    //),
+  //);
+  //field_create_field($field);
 
-  $help = st('Enter a comma-separated list of words to describe your content.');
-  $instance = array(
-    'field_name' => 'field_' . $vocabulary->machine_name,
-    'entity_type' => 'node',
-    'label' => 'Tags',
-    'bundle' => 'article',
-    'description' => $help,
-    'widget' => array(
-      'type' => 'taxonomy_autocomplete',
-      'weight' => -4,
-    ),
-    'display' => array(
-      'default' => array(
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-    ),
-  );
-  field_create_instance($instance);
-}
+  //$help = st('Enter a comma-separated list of words to describe your content.');
+  //$instance = array(
+    //'field_name' => 'field_' . $vocabulary->machine_name,
+    //'entity_type' => 'node',
+    //'label' => 'Tags',
+    //'bundle' => 'article',
+    //'description' => $help,
+    //'widget' => array(
+      //'type' => 'taxonomy_autocomplete',
+      //'weight' => -4,
+    //),
+    //'display' => array(
+      //'default' => array(
+        //'type' => 'taxonomy_term_reference_link',
+        //'weight' => 10,
+      //),
+      //'teaser' => array(
+        //'type' => 'taxonomy_term_reference_link',
+        //'weight' => 10,
+      //),
+    //),
+  //);
+  //field_create_instance($instance);
+//}
 
 /**
  * Create a site-admin user role and assign all permissions
