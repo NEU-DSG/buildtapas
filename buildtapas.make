@@ -22,6 +22,7 @@ projects[admin_menu][subdir] = contrib
 
 ; Additional modules
 projects[homebox][subdir] = contrib
+projects[token][subdir] = contrib
 
 ; Dev modules
 projects[devel][subdir] = develop

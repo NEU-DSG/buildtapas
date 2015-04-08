@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.x
+core = 7.36
 exclusive = true
 
 ; -----------------------------------------------------------------------------
@@ -16,7 +16,7 @@ exclusive = true
 ; Core
 dependencies[] = block
 dependencies[] = color
-dependencies[] = comment
+;dependencies[] = comment
 ;dependencies[] = contact
 dependencies[] = contextual
 ;dependencies[] = dashboard
@@ -74,6 +74,7 @@ dependencies[] = views_ui
 dependencies[] = features
 dependencies[] = homebox
 ;dependencies[] = homebox_og
+dependencies[] = token
 
 ; Development
 dependencies[] = devel

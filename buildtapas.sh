@@ -1,4 +1,6 @@
 #!/bin/bash
+$BRANCH = 'develop';
+
 
 ## I. Usage statement
 if [ "$5" == "" ]
@@ -28,7 +30,7 @@ echo "api = 2" > stub.make;
 echo "core = 7.36" >> stub.make;
 echo "" >> stub.make;
 echo "projects[drupal][type] = core" >> stub.make;
-echo "projects[drupal][version] = 7.35" >> stub.make;
+echo "projects[drupal][version] = 7.36" >> stub.make;
 #echo "" >> stub.make;
 #echo "; See https://www.drupal.org/node/1432374 for path info. legacy" >> stub.make;
 #echo "; check causes problems with custom profiles." >> stub.make;
@@ -38,6 +40,7 @@ echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
+echo "projects[buildtapas][download][branch] = $BRANCH" >> stub.make
 
 ## III. Run the stub.make
 echo "=============================================="
