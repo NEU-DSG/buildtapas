@@ -11,7 +11,7 @@ function buildtapas_install() {
 
 	// Text filters from standard install.
 	_buildtapas_textfilters();
-	_buildtapas_rdf();
+	//_buildtapas_rdf();
 	_buildtapas_tags();
 	_buildtapas_adminrole();
 
