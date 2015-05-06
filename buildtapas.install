@@ -13,7 +13,7 @@ function buildtapas_install() {
 	_buildtapas_textfilters();
 	//_buildtapas_rdf();
 	//_buildtapas_tags();
-	_buildtapas_adminrole();
+	//_buildtapas_adminrole();
 
 	variable_set('site_name', 'TAPAS Project');
 	variable_set('clean_url', TRUE);
