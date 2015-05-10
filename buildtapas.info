@@ -48,7 +48,7 @@ dependencies[] = user
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
-;dependencies[] = og_context
+dependencies[] = og_context
 dependencies[] = og_ui
 
 ; Ctools & entities
@@ -77,9 +77,9 @@ dependencies[] = homebox
 dependencies[] = token
 
 ; Development
-;dependencies[] = devel
-;dependencies[] = devel_generate
-;dependencies[] = devel_node_access
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = devel_node_access
 dependencies[] = advanced_help
 
 ; Custom

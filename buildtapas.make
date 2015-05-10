@@ -1,5 +1,5 @@
 api = 2
-core = 7.36
+core = 7.37
 
 ; Contributed modules key dependencies
 projects[ctools][subdir] = contrib
@@ -29,6 +29,7 @@ projects[devel][subdir] = develop
 ;projects[checklistapi][subdir] = develop
 ;projects[qa_checklist][subdir] = develop
 projects[advanced_help][subdir] = develop
+projects[coder][subdir] = develop
 
 ; custom 
 projects[tapas-modules][type] = module
