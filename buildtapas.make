@@ -19,6 +19,7 @@ projects[name][subdir] = contrib
 
 ; Administrative
 projects[admin_menu][subdir] = contrib
+projects[backup_migrate][subdir] = contrib
 
 ; Additional modules
 projects[homebox][subdir] = contrib
