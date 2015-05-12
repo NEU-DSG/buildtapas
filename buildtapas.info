@@ -84,18 +84,18 @@ dependencies[] = advanced_help
 
 ; Custom
 dependencies[] = tapasrecord
-;dependencies[] = feature_tapas_project
-;dependencies[] = feature_tapas_collection
-;dependencies[] = feature_tapas_taxonomy_institution
-;dependencies[] = feature_tapas_user
-;dependencies[] = feature_tapas_tinythumb
-;dependencies[] = feature_tapas_newsitem
-;;dependencies[] = feature_tapas_infopage
-;dependencies[] = feature_tapas_menu_mainmenu
-;dependencies[] = feature_tapas_sitewide_permissions
-;dependencies[] = feature_tapas_sysadmin_permissions
-;dependencies[] = feature_tapas_tapasrecord_as_content
-;dependencies[] = feature_tapas_view_collections_in_project
-;dependencies[] = feature_tapas_view_grouped_collections
-;dependencies[] = features_tapas_og_base
+dependencies[] = feature_tapas_project
+dependencies[] = feature_tapas_collection
+dependencies[] = feature_tapas_taxonomy_institution
+dependencies[] = feature_tapas_user
+dependencies[] = feature_tapas_tinythumb
+dependencies[] = feature_tapas_newsitem
+dependencies[] = feature_tapas_infopage
+dependencies[] = feature_tapas_menu_mainmenu
+dependencies[] = feature_tapas_sitewide_permissions
+dependencies[] = feature_tapas_sysadmin_permissions
+dependencies[] = feature_tapas_tapasrecord_as_content
+dependencies[] = feature_tapas_view_collections_in_project
+dependencies[] = feature_tapas_view_grouped_collections
+dependencies[] = features_tapas_og_base
 
