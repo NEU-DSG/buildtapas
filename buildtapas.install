@@ -5,6 +5,9 @@
  * Perform actions to set up the site for this profile.
  */
 function buildtapas_install() {
+	echo "#########";
+	echo "Location of Standard: " . DRUPAL_ROOT . "/profiles/standard/standard.install";
+	echo "#########";
   include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
 
 	variable_set('site_name', 'TAPAS Project');
