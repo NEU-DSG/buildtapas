@@ -35,7 +35,7 @@ echo "projects[drupal][version] = 7.37" >> stub.make;
 echo "projects[drupal][patch][] = https://www.drupal.org/files/1093420-22.patch" >> stub.make;
 echo "projects[drupal][patch][] = https://www.drupal.org/files/issues/comment-node-type-delete-1565892-3.patch" >> stub.make;
 echo "" >> stub.make;
-echo "projects[buildtapas][type] = buildtapas" >> stub.make;
+echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
 echo "projects[buildtapas][download][branch] = development" >> stub.make
