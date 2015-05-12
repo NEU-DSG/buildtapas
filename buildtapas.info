@@ -95,7 +95,7 @@ dependencies[] = feature_tapas_menu_mainmenu
 dependencies[] = feature_tapas_sitewide_permissions
 dependencies[] = feature_tapas_sysadmin_permissions
 dependencies[] = feature_tapas_tapasrecord_as_content
-dependencies[] = feature_tapas_view_collections_in_projects
+dependencies[] = feature_tapas_view_collections_in_project
 dependencies[] = feature_tapas_view_grouped_collections
-dependencies[] = feature_tapas_og_base
+dependencies[] = features_tapas_og_base
 
