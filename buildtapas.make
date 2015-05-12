@@ -41,4 +41,5 @@ projects[tapas-modules][download][branch] = development
 projects[tapas-themes][type] = theme
 projects[tapas-themes][download][type] = git
 projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-themes
+projects[tapas-themes][download][branch] = redesign
 
