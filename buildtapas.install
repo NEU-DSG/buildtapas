@@ -6,7 +6,6 @@
  */
 function buildtapas_install() {
   include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
-	standard_install();
 
 	variable_set('site_name', 'TAPAS Project');
 	variable_set('clean_url', TRUE);
@@ -16,5 +15,6 @@ function buildtapas_install() {
 	variable_set('user_pictures', TRUE);
 	variable_set('user_picture_dimentions', '200x200');
 
+	standard_install();
 
 }
