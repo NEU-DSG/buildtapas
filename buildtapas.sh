@@ -70,7 +70,7 @@ echo "=============================================="
 #    * enable modules
 #    * miscelaneous installation tasks
 echo "Command: drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3"
-drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3
+drush -y si standard --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3
 
 ## VI. Rebuild permissions
 echo "=============================================="
