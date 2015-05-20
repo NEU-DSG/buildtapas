@@ -9,13 +9,13 @@ function buildtapas_install() {
 
 	variable_set('site_name', 'TAPAS Project');
 	variable_set('clean_url', TRUE);
-	variable_set('file_private_path', '/var/www/tapasfiles' );
+	//variable_set('file_private_path', ### );
 	//variable_set('file_public_path', ###);
 	//variable_set('file_tempoaray_path', ###);
 	variable_set('user_pictures', TRUE);
 	variable_set('user_picture_dimentions', '200x200');
-	variable_set('default_theme', 'tapas_resdesign_subtheme');
 
+	standard_install();
 
 	standard_install();
 }
