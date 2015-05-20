@@ -15,5 +15,7 @@ function buildtapas_install() {
 	//variable_set('file_tempoaray_path', ###);
 	variable_set('user_pictures', TRUE);
 	variable_set('user_picture_dimentions', '200x200');
+	
+	$GLOBALS ['conf']['site_name'] = "TAPAS Project";
 
 }
