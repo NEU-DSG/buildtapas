@@ -5,6 +5,8 @@
  * Perform actions to set up the site for this profile.
  */
 function buildtapas_install() {
+
+	echo "<h2>BEGINNING of buildtapas_install</h2>";
   include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
 	standard_install();
 
@@ -16,6 +18,8 @@ function buildtapas_install() {
 	variable_set('user_pictures', TRUE);
 	variable_set('user_picture_dimentions', '200x200');
 	
-	$GLOBALS ['conf']['site_name'] = "TAPAS Project";
+	$GLOBALS['conf']['site_name'] = "TAPAS Project";
+
+	echo "<h2>ENDING of buildtapas_install site name is " . $GLOBALS['conf']['site_name'] . "</h2>";
 
 }
