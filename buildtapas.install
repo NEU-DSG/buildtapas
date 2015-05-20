@@ -6,7 +6,6 @@
  */
 function buildtapas_install() {
   include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
-	standard_install();
 
 	variable_set('site_name', 'TAPAS Project');
 	variable_set('clean_url', TRUE);
@@ -18,4 +17,5 @@ function buildtapas_install() {
 	variable_set('default_theme', 'tapas_resdesign_subtheme');
 
 
+	standard_install();
 }
