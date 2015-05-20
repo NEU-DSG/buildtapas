@@ -16,6 +16,4 @@ function buildtapas_install() {
 	variable_set('user_pictures', TRUE);
 	variable_set('user_picture_dimentions', '200x200');
 
-	drupal_rewrite_settings();
-
 }
