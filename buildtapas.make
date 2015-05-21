@@ -7,14 +7,14 @@ projects[views][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[og][subdir] = contrib
 projects[features][subdir] = contrib
-;projects[rules][subdir] = contrib
+projects[rules][subdir] = contrib
 projects[entity][subdir] = contrib
 projects[entityreference][subdir] = contrib
 
 ; Field types
 projects[date][subdir] = contrib
 projects[link][subdir] = contrib
-;projects[addressfield][subdir] = contrib
+projects[addressfield][subdir] = contrib
 projects[name][subdir] = contrib
 
 ; Administrative
