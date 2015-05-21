@@ -72,7 +72,15 @@ echo "=============================================="
 echo "Command: drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3"
 drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3
 
-## VI. Rebuild permissions
+## VI. Additional drush commands
+echo "=============================================="
+echo "Additional drush commands...."
+echo "=============================================="
+# http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
+# Inelegant solution since it bypasses localization, but it does the job for now.
+drush -y vset site_name "TAPAS Project"
+
+## VII. Rebuild permissions
 echo "=============================================="
 echo "Rebuilding permissions and updating variables...."
 echo "=============================================="
