@@ -74,17 +74,23 @@ drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass
 
 ## VI. Additional drush commands
 echo "=============================================="
-echo "Additional drush commands...."
+echo "Additional drush commands and other cleanup...."
 echo "=============================================="
+
 # http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
 # Inelegant solution since it bypasses localization, but it does the job for now.
 drush -y vset site_name "TAPAS Project"
+
 # Turning off some modules that the 'standard' profile turns on
 drush -y dis comment
 drush -y dis dashboard
 drush -y dis overlay
 drush -y dis shortcut
-drush -y toolbar # using the adminmenu module instead
+drush -y dis toolbar # using the adminmenu module instead
+
+# Removing two "sample" features that conflict with our custom features
+rm -r profiles/buildtapas/modules/contrib/og/og_example
+rm -r profiles/buildtapas/modules/contrib/date/date_migrate/date_migrate_example
 
 ## VII. Rebuild permissions
 echo "=============================================="
