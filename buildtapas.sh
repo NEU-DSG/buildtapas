@@ -79,6 +79,12 @@ echo "=============================================="
 # http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
 # Inelegant solution since it bypasses localization, but it does the job for now.
 drush -y vset site_name "TAPAS Project"
+# Turning off some modules that the 'standard' profile turns on
+drush -y dis comment
+drush -y dis dashboard
+drush -y dis overlay
+drush -y dis shortcut
+drush -y toolbar # using the adminmenu module instead
 
 ## VII. Rebuild permissions
 echo "=============================================="

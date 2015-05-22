@@ -6,20 +6,19 @@
  */
 function buildtapas_install() {
 
-	echo "<h2>BEGINNING of buildtapas_install</h2>";
   include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
 	standard_install();
 
-	variable_set('site_name', 'TAPAS Project');
+	//variable_set('site_name', 'TAPAS Project');
 	variable_set('clean_url', TRUE);
 	//variable_set('file_private_path', ### );
 	//variable_set('file_public_path', ###);
 	//variable_set('file_tempoaray_path', ###);
 	variable_set('user_pictures', TRUE);
 	variable_set('user_picture_dimentions', '200x200');
+
+
+	// Temporarily moving variables to drush calls in shell script, because
+	// something is clobbering them when I set them here.
 	
-	$GLOBALS['conf']['site_name'] = "TAPAS Project";
-
-	echo "<h2>ENDING of buildtapas_install site name is " . $GLOBALS['conf']['site_name'] . "</h2>";
-
 }
