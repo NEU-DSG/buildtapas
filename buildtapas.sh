@@ -82,7 +82,6 @@ echo "=============================================="
 drush -y vset site_name "TAPAS Project"
 
 # Turning off some modules that the 'standard' profile turns on
-drush -y dis comment
 drush -y dis dashboard
 drush -y dis overlay
 drush -y dis shortcut
