@@ -82,10 +82,7 @@ echo "=============================================="
 drush -y vset site_name "TAPAS Project"
 
 # Turning off some modules that the 'standard' profile turns on
-drush -y dis dashboard
-drush -y dis overlay
-drush -y dis shortcut
-drush -y dis toolbar # using the adminmenu module instead
+drush -y dis dashboard overlay shortcut toolbar
 
 # Removing two "sample" features that conflict with our custom features
 rm -r profiles/buildtapas/modules/contrib/og/og_example
