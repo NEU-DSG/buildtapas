@@ -38,6 +38,7 @@ echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
+echo "projects[buildtapas][download][branch] = development" >> stub.make
 
 ## III. Run the stub.make
 echo "=============================================="
@@ -71,7 +72,24 @@ echo "=============================================="
 echo "Command: drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3"
 drush -y si buildtapas --db-url=mysql://$1:$2@localhost:8080/$3 username=$4 pass=$5 dbname=$3
 
-## VI. Rebuild permissions
+## VI. Additional drush commands
+echo "=============================================="
+echo "Additional drush commands and other cleanup...."
+echo "=============================================="
+
+# http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
+# Inelegant solution since it bypasses localization, but it does the job for now.
+drush -y vset site_name "TAPAS Project"
+drush -y vset theme_default "tapas_redesign_subtheme"
+
+# Turning off some modules that the 'standard' profile turns on
+drush -y dis dashboard overlay shortcut toolbar
+
+# Removing two "sample" features that conflict with our custom features
+rm -r profiles/buildtapas/modules/contrib/og/og_example
+rm -r profiles/buildtapas/modules/contrib/date/date_migrate/date_migrate_example
+
+## VII. Rebuild permissions
 echo "=============================================="
 echo "Rebuilding permissions and updating variables...."
 echo "=============================================="

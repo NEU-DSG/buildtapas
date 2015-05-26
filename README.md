@@ -1,7 +1,12 @@
 # buildtapas
 The Drupal build profile and drush makefile for installing the tapas project.
 
-## instructions
+## instructions for setting up the virtual box
+ 1. Get Vagrant for Drupal development at https://www.drupal.org/project/vdd
+ 2. Follow the directions at the above link to install
+ 3. Install the XML parsing php library by typing `sudo apt-get install php5-xsl`
+
+## instructions for using buildtapas
 
   1. Download the buildtapas.sh file (yes, ONLY this file. It will clone/download/create everything else that it needs).
   2. Place it in the location where you want to install Drupal

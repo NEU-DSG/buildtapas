@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.x
+core = 7.37
 exclusive = true
 
 ; -----------------------------------------------------------------------------
@@ -14,6 +14,7 @@ exclusive = true
 
 
 ; Core
+
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -22,11 +23,10 @@ dependencies[] = contextual
 ;dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field
-dependencies[] = field_sql_storage
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = filter
-;dependencies[] = forum
+dependencies[] = forum
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
@@ -48,7 +48,7 @@ dependencies[] = user
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
-;dependencies[] = og_context
+dependencies[] = og_context
 dependencies[] = og_ui
 
 ; Ctools & entities
@@ -70,10 +70,15 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
+; Community
+dependencies[] = sharethis
+dependencies[] = follow
+
 ; Other
 dependencies[] = features
 dependencies[] = homebox
 ;dependencies[] = homebox_og
+dependencies[] = token
 
 ; Development
 dependencies[] = devel
@@ -82,7 +87,14 @@ dependencies[] = devel_node_access
 dependencies[] = advanced_help
 
 ; Custom
-dependencies[] = feature_tapas_project
-dependencies[] = feature_tapas_collection
-dependencies[] = feature_tapas_tinythumb
-
+dependencies[] = tapasrecord
+dependencies[] = tapas_feature_base_og                        
+dependencies[] = tapas_feature_base_tinythumb
+dependencies[] = tapas_feature_base_users
+dependencies[] = tapas_feature_content_collection
+dependencies[] = tapas_feature_content_labnote
+dependencies[] = tapas_feature_content_project
+dependencies[] = tapas_feature_content_tapasrecord_as_content
+dependencies[] = tapas_feature_menu_main
+dependencies[] = tapas_feature_taxonomy_institution
+dependencies[] = tapas_feature_view_group_members
