@@ -22,7 +22,7 @@ dependencies[] = toolbar
 
 dependencies[] = block
 dependencies[] = color
-;dependencies[] = comment
+dependencies[] = comment
 ;dependencies[] = contact
 dependencies[] = contextual
 ;dependencies[] = dashboard
@@ -31,7 +31,7 @@ dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = filter
-;dependencies[] = forum
+dependencies[] = forum
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
