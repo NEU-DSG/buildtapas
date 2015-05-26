@@ -88,7 +88,7 @@ dependencies[] = advanced_help
 
 ; Custom
 dependencies[] = tapasrecord
-;dependencies[] = tapas_feature_base_og                        
+dependencies[] = tapas_feature_base_og                        
 ;dependencies[] = tapas_feature_base_tinythumb
 ;dependencies[] = tapas_feature_base_users
 ;dependencies[] = tapas_feature_content_collection
