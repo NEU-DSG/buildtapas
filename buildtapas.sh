@@ -80,6 +80,7 @@ echo "=============================================="
 # http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
 # Inelegant solution since it bypasses localization, but it does the job for now.
 drush -y vset site_name "TAPAS Project"
+drush -y vset default_theme "tapas_redesign_subtheme"
 
 # Turning off some modules that the 'standard' profile turns on
 drush -y dis dashboard overlay shortcut toolbar
