@@ -98,4 +98,6 @@ dependencies[] = tapas_feature_content_tapasrecord_as_content
 dependencies[] = tapas_feature_menu_main
 dependencies[] = tapas_feature_taxonomy_institution
 dependencies[] = tapas_feature_view_group_members
+dependencies[] = tapas_feature_view_records_in_collection
+dependencies[] = tapas_feature_view_labnotes
 
