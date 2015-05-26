@@ -75,6 +75,10 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
+; Community
+dependencies[] = sharethis
+dependencies[] = follow
+
 ; Other
 dependencies[] = features
 dependencies[] = homebox

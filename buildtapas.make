@@ -21,6 +21,10 @@ projects[name][subdir] = contrib
 projects[admin_menu][subdir] = contrib
 projects[backup_migrate][subdir] = contrib
 
+; Community
+projects[sharethis][subdir] = contrib
+projects[follow][shubdir] = contrib
+
 ; Additional modules
 projects[homebox][subdir] = contrib
 projects[token][subdir] = contrib
