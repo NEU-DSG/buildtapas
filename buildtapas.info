@@ -67,6 +67,7 @@ dependencies[] = name
 dependencies[] = admin_menu
 dependencies[] = taxonomy_csv
 dependencies[] = node_export
+dependencies[] = uuid
 
 ; Views
 dependencies[] = views
