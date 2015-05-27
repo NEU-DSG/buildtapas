@@ -65,6 +65,8 @@ dependencies[] = name
 
 ; Administration
 dependencies[] = admin_menu
+dependencies[] = taxonomy_csv
+dependencies[] = node_export
 
 ; Views
 dependencies[] = views
