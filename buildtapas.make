@@ -29,6 +29,7 @@ projects[profile2][subdir] = contrib
 ; Additional modules
 projects[homebox][subdir] = contrib
 projects[token][subdir] = contrib
+projects[jquery_update][subdir] = contrib
 
 ; Dev modules
 projects[devel][subdir] = develop

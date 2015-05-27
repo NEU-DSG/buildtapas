@@ -45,12 +45,14 @@ dependencies[] = views_ui
 ; Community
 dependencies[] = sharethis
 dependencies[] = follow
+dependencies[] = profile2
 
 ; Other
 dependencies[] = features
 dependencies[] = homebox
 ;dependencies[] = homebox_og
 dependencies[] = token
+dependencies[] = jquery_update
 
 ; Development
 dependencies[] = devel
