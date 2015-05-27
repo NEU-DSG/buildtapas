@@ -19,7 +19,9 @@ projects[name][subdir] = contrib
 
 ; Administrative
 projects[admin_menu][subdir] = contrib
-projects[backup_migrate][subdir] = contrib
+;projects[backup_migrate][subdir] = contrib
+projects[node_export][subdir]  = contrib
+projects[taxonomy_csv][subdir] = contrib
 
 ; Community
 projects[sharethis][subdir] = contrib
