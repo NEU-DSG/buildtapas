@@ -23,7 +23,8 @@ projects[backup_migrate][subdir] = contrib
 
 ; Community
 projects[sharethis][subdir] = contrib
-projects[follow][shubdir] = contrib
+projects[follow][subdir] = contrib
+projects[profile2][subdir] = contrib
 
 ; Additional modules
 projects[homebox][subdir] = contrib
