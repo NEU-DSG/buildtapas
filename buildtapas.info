@@ -67,6 +67,7 @@ dependencies[] = name
 dependencies[] = admin_menu
 dependencies[] = taxonomy_csv
 dependencies[] = node_export
+dependencies[] = node_export_features
 dependencies[] = uuid
 
 ; Views
@@ -96,7 +97,7 @@ dependencies[] = advanced_help
 dependencies[] = tapasrecord
 dependencies[] = tapas_feature_base_og                        
 dependencies[] = tapas_feature_base_tinythumb
-dependencies[] = tapas_feature_base_permissions
+;dependencies[] = tapas_feature_base_permissions
 dependencies[] = tapas_feature_content_collection
 dependencies[] = tapas_feature_content_labnote
 dependencies[] = tapas_feature_content_project
