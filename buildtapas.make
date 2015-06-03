@@ -45,10 +45,12 @@ projects[coder][subdir] = develop
 projects[tapas-modules][type] = module
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
-projects[tapas-modules][download][branch] = development
+projects[tapas-modules][download][branch] = master
+projects[tapas-modules][download[branch][working-copy] = TRUE
 
 projects[tapas-themes][type] = theme
 projects[tapas-themes][download][type] = git
 projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-themes
 projects[tapas-themes][download][branch] = redesign
+projects[tapas-themes][download][working-copy] = TRUE
 
