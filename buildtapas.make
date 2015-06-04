@@ -20,9 +20,10 @@ projects[name][subdir] = contrib
 ; Administrative
 projects[admin_menu][subdir] = contrib
 ;projects[backup_migrate][subdir] = contrib
-projects[node_export][subdir]  = contrib
-projects[taxonomy_csv][subdir] = contrib
-projects[uuid][subdir] = contrib
+projects[node_export][subdir]  = migration
+projects[taxonomy_csv][subdir] = migration
+projects[uuid][subdir] = migration
+projects[user_import][subdir] = migration
 
 ; Community
 projects[sharethis][subdir] = contrib
