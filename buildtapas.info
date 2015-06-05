@@ -87,6 +87,7 @@ dependencies[] = homebox
 ;dependencies[] = homebox_og
 dependencies[] = token
 dependencies[] = jquery_update
+dependencies[] = hierarchical_select
 
 ; Development
 dependencies[] = devel
