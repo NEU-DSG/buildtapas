@@ -21,9 +21,14 @@ projects[name][subdir] = contrib
 projects[admin_menu][subdir] = contrib
 ;projects[backup_migrate][subdir] = contrib
 projects[node_export][subdir]  = migration
-projects[taxonomy_csv][subdir] = migration
 projects[uuid][subdir] = migration
 projects[user_import][subdir] = migration
+
+# taxonomy_csv's attempt maintain drush backwards compatibility breaks
+# the drush commands in version seven. This patch fixes the issue by
+# commenting out the v6 compatibility code.
+projects[taxonomy_csv][subdir] = migration
+projects[taxonomy_csv][patch] = https://www.drupal.org/files/issues/taxonomy_csv-drush_v6_taxocsv_import_compatibility-2310025-2.patch
 
 ; Community
 projects[sharethis][subdir] = contrib
