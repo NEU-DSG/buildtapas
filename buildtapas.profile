@@ -23,12 +23,3 @@ if (!function_exists("system_form_install_select_profile_form_alter")) {
 		}
 	}
 }
-
-
-/**
- * Activates site install hooks library
- */
-//if (!function_exists('site_install_hooks_initialize')) {
-//  require_once('libraries/site_install_hooks/site_install_hooks.inc');
-//}
-//site_install_hooks_initialize('buildtapas');

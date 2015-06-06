@@ -19,16 +19,9 @@ projects[name][subdir] = contrib
 
 ; Administrative
 projects[admin_menu][subdir] = contrib
-;projects[backup_migrate][subdir] = contrib
 projects[node_export][subdir]  = migration
 projects[uuid][subdir] = migration
 projects[user_import][subdir] = migration
-
-# taxonomy_csv's attempt maintain drush backwards compatibility breaks
-# the drush commands in version seven. This patch fixes the issue by
-# commenting out the v6 compatibility code.
-;projects[taxonomy_csv][subdir] = migration
-;projects[taxonomy_csv][patch] = https://www.drupal.org/files/issues/taxonomy_csv-drush_v6_taxocsv_import_compatibility-2310025-2.patch
 
 ; Community
 projects[sharethis][subdir] = contrib
@@ -47,11 +40,7 @@ projects[devel][subdir] = develop
 ;projects[qa_checklist][subdir] = develop
 projects[advanced_help][subdir] = develop
 projects[coder][subdir] = develop
-
-;libraries[site_install_hooks][type] = "library"
-;libraries[site_install_hooks][download][type] = "get"
-;libraries[site_install_hooks][download][url] = "http://ftp.drupal.org/files/projects/site_install_hooks-7.x-1.0-alpha2.tar.gz"
-
+projects[site_install_hooks][subdir] = develop
 
 ; custom 
 projects[tapas-modules][type] = module

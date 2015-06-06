@@ -5,6 +5,8 @@
  * Installation actions for buildtapas profile
  */
 
+ include_once "buildtapas_vocabularies";
+
 /**
  * Implements hook_install().
  *
@@ -123,7 +125,7 @@ function _tapas_create_taxonomies() {
 	_tapas_populate_simple_taxonomy('slugs', 'taxo_slugs.csv');
 	_tapas_populate_simple_taxonomy('forums', 'taxo_forums.csv');
 	
-	_tapas_populate_taxonomy_institutions('taxo_institutions.csv');
+	_tapas_populate_taxonomy_institutions();
 }
 
 /**
