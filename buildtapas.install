@@ -5,8 +5,6 @@
  * Installation actions for buildtapas profile
  */
 
-include_once 'buildtapas_vocabularies.inc';
-
 /**
  * Implements hook_install().
  *
@@ -25,9 +23,6 @@ function buildtapas_install() {
 
   // Allow visitor account creation with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
-
-
-	//_tapas_create_taxonomies();
 
 //	_tapas_create_role('administrator', 'admin_perms.csv');
 //	_tapas_create_role('paidmember', 'paid_perms.csv');
@@ -104,58 +99,6 @@ function _tapas_rdf() {
   }
 }
 
-/**
- * Populates the tags, institutions, forum, and slugs vocabularies.
- *
- * Creates and populates the Tags and Slugs vocabularies. Populates the 
- * Institutions vocabulary(added by feature), the Forums vocabulary (added
- * by the Forums module)
- */
-
-function _tapas_create_taxonomies() {
-
-	$tags_description = st('Use tags to group articles on similar topics into categories.');
-	_tapas_create_vocabulary('Tags', 'tags', $tags_description);
-
-	$slugs_description = st('Unique names used in URLS for projects and collections.');
-	_tapas_create_vocabulary('Slugs', 'slugs', $slugs_description);
-
-	_tapas_populate_simple_taxonomy('tags', 'taxo_tags.csv');
-	_tapas_populate_simple_taxonomy('slugs', 'taxo_slugs.csv');
-	_tapas_populate_simple_taxonomy('forums', 'taxo_forums.csv');
-	
-	_tapas_populate_taxonomy_institution();
-}
-
-/**
- * Creates a flat vocabulary
- *
- * @param $name: The human-readable vocabulary name
- * @param $machine: The machine-name for the vocabulary
- * @param $description: The vocabulary's description
- *
- * @return The vocabulary object that was created.
- */
-
-function _tapas_create_vocabulary($name, $machine, $description) {
-
-	$vocabulary = (object) array(
-		'name' => $name,
-		'description' => $description,
-		'machine_name' => $machine,
-	);
-	taxonomy_vocabulary_save($vocabulary);
-
-	return $vocabulary;
-}
-
-/**
- * Populates a flat, name-only vocabulary.
- */
-function _tapas_populate_simple_taxonomy($vocabname, $filename) {
-	//TODO: REad in vocabularies.
-
-}
 
 /**
  *
