@@ -9,7 +9,7 @@
  */
 
 /**
- * Returns an array of institution terms to add to the vocabulary.
+ * Populates the Institution taxonomy
  */
 
 function _tapas_populate_taxonomy_institution() {
