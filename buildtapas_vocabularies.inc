@@ -8,10 +8,10 @@
  */
 
 /**
- * Returns an array of institution terms to add to the vocabulary.
+ * Populates the Institution taxonomy
  */
 
-function tapas_populate_taxonomy_institutions() {
+function _tapas_populate_taxonomy_institutions() {
 
 	$base_array = array(
 		'vid' => 'tapas_institutions',

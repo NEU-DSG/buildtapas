@@ -5,7 +5,7 @@
  * Installation actions for buildtapas profile
  */
 
- include_once "buildtapas_vocabularies";
+include_once "buildtapas_vocabularies.inc";
 
 /**
  * Implements hook_install().
@@ -138,7 +138,7 @@ function _tapas_create_taxonomies() {
  * @return The vocabulary object that was created.
  */
 
-function _tapas_create_taxonomy($name, $machine, $description) {
+function _tapas_create_vocabulary($name, $machine, $description) {
 
 	$vocabulary = (object) array(
 		'name' => $name,
