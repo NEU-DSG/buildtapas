@@ -48,7 +48,7 @@ dependencies[] = user
 
 ; Added for theme
 dependencies[] = block_class
-dependencies[] = features_extra
+dependencies[] = fe_block
 dependencies[] = views_bootstrap
 dependencies[] = ds
 ; Organic groups
