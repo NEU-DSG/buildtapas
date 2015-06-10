@@ -1,6 +1,15 @@
 api = 2
 core = 7.37
 
+; Added for theme
+projects[jquery_update][subdir] = contrib
+projects[block_class][subdir] = contrib
+projects[features_extra][subdir] = contrib
+projects[views_bootstrap][subdir] = contrib
+projects[ds][subdir] = contrib
+
+
+
 ; Contributed modules key dependencies
 projects[ctools][subdir] = contrib
 projects[views][subdir] = contrib
@@ -31,7 +40,6 @@ projects[profile2][subdir] = contrib
 ; Additional modules
 projects[homebox][subdir] = contrib
 projects[token][subdir] = contrib
-projects[jquery_update][subdir] = contrib
 projects[hierarchical_select][subdir] = contrib
 
 ; Dev modules
@@ -41,6 +49,7 @@ projects[devel][subdir] = develop
 projects[advanced_help][subdir] = develop
 projects[coder][subdir] = develop
 projects[site_install_hooks][subdir] = develop
+projects[diff][subdir] = develop
 
 ; custom 
 projects[tapas-modules][type] = module

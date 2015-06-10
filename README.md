@@ -25,3 +25,4 @@ The website login will be username `admin` with a randomly generated password wh
 	2. Under the 'TAPAS' section of the Modules page, enable the 'importtaxonomies' modules to populate the taxonomy values.
 	3. Use Node Export's import feature to upload the basic page exports stored in the buildtapas subfolder.
 	4. Use Node Export's import feature to upload the content (not stored in Github, because not all of it is public).
+	5. Manually set 'sharethis' settings. Couldn't figure out a way to do it programatically.

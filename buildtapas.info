@@ -46,6 +46,11 @@ dependencies[] = text
 dependencies[] = update
 dependencies[] = user
 
+; Added for theme
+dependencies[] = block_class
+dependencies[] = features_extra
+dependencies[] = views_bootstrap
+dependencies[] = ds
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
@@ -93,6 +98,7 @@ dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = devel_node_access
 dependencies[] = advanced_help
+dependencies[] = diff
 
 ; Custom
 dependencies[] = tapasrecord
