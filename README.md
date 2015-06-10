@@ -11,7 +11,7 @@ If you use tapas-platter, this script will be called automagically -- skip to th
   1. Download the buildtapas.sh file (yes, ONLY this file. It will clone/download/create everything else that it needs).
   2. Place it in the location where you want to install Drupal
   3. The five parameters are:
-     * Username for exisiting MySQL account with sufficient permissions to create a new database
+    * Username for exisiting MySQL account with sufficient permissions to create a new database
 	  * The password for above MySQL account
 	  * The name of the new drupal database to create
 	  * the name of the new user to create for drupal to use to access this new database
@@ -22,7 +22,8 @@ The website login will be username `admin` with a randomly generated password wh
 ## After running the buildtapas.sh script
 
   1. Log in and change the 'admin' password.
-  2. Under the 'TAPAS' section of the Modules page, enable the 'importtaxonomies' modules to populate the taxonomy values.
-  3. Use Node Export's import feature to upload the basic page exports stored in the buildtapas subfolder.
-  4. Use Node Export's import feature to upload the content (not stored in Github, because not all of it is public).
-  5. Manually set 'sharethis' settings. Couldn't figure out a way to do it programatically.
+  1. Under the 'TAPAS' section of the Modules page, enable the 'importtaxonomies' modules to populate the taxonomy values.
+	1. Go into the UUID module's settings and hit the "Create Missing UUID's" button
+  1. Use Node Export's import feature to upload the basic page exports stored in the buildtapas subfolder.
+  1. Use Node Export's import feature to upload the content (not stored in Github, because not all of it is public).
+  1. Manually set 'sharethis' settings. Couldn't figure out a way to do it programatically.
