@@ -81,7 +81,7 @@ echo "=============================================="
 # http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
 # Inelegant solution since it bypasses localization, but it does the job for now.
 drush -y vset site_name "TAPAS Project"
-drush -y vset theme_default "tapas_redesign"
+#drush -y vset theme_default "tapas_redesign"
 drush -y vset clean_url TRUE
 drush -y vset user_pictures TRUE
 drush -y vset user_picture_dimentions "200x200"

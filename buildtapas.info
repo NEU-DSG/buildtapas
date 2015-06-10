@@ -47,10 +47,12 @@ dependencies[] = update
 dependencies[] = user
 
 ; Added for theme
-dependencies[] = block_class
-dependencies[] = fe_block
-dependencies[] = views_bootstrap
-dependencies[] = ds
+;dependencies[] = block_class
+;dependencies[] = fe_block
+;dependencies[] = views_bootstrap
+;dependencies[] = ds
+;dependencies[] = jquery_update
+;
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
@@ -90,7 +92,6 @@ dependencies[] = features
 dependencies[] = homebox
 ;dependencies[] = homebox_og
 dependencies[] = token
-dependencies[] = jquery_update
 dependencies[] = hierarchical_select
 
 ; Development
@@ -98,7 +99,7 @@ dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = devel_node_access
 dependencies[] = advanced_help
-dependencies[] = diff
+;dependencies[] = diff
 
 ; Custom
 dependencies[] = tapasrecord
