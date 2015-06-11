@@ -47,7 +47,7 @@ projects[devel][subdir] = develop
 ;projects[checklistapi][subdir] = develop
 ;projects[qa_checklist][subdir] = develop
 projects[advanced_help][subdir] = develop
-projects[coder][subdir] = develop
+;projects[coder][subdir] = develop
 projects[site_install_hooks][subdir] = develop
 ;projects[diff][subdir] = develop
 
