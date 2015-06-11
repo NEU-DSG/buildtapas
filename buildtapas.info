@@ -14,7 +14,8 @@ exclusive = true
 
 
 ; Core
-
+; Since we call the 'standard' profile in 'buildtapas.install', we don't need
+;    also list the core modules here.
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -45,6 +46,13 @@ dependencies[] = text
 dependencies[] = update
 dependencies[] = user
 
+; Added for theme
+dependencies[] = block_class
+dependencies[] = fe_block
+dependencies[] = views_bootstrap
+dependencies[] = ds
+dependencies[] = jquery_update
+;
 ; Organic groups
 dependencies[] = og
 dependencies[] = og_access
@@ -64,6 +72,10 @@ dependencies[] = name
 
 ; Administration
 dependencies[] = admin_menu
+dependencies[] = node_export
+dependencies[] = node_export_features
+dependencies[] = uuid
+dependencies[] = user_import
 
 ; Views
 dependencies[] = views
@@ -73,28 +85,29 @@ dependencies[] = views_ui
 ; Community
 dependencies[] = sharethis
 dependencies[] = follow
+dependencies[] = profile2
 
 ; Other
 dependencies[] = features
 dependencies[] = homebox
 ;dependencies[] = homebox_og
 dependencies[] = token
+dependencies[] = hierarchical_select
 
 ; Development
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = devel_node_access
 dependencies[] = advanced_help
+dependencies[] = diff
 
 ; Custom
 dependencies[] = tapasrecord
 dependencies[] = tapas_feature_base_og                        
 dependencies[] = tapas_feature_base_tinythumb
-dependencies[] = tapas_feature_base_users
-dependencies[] = tapas_feature_content_collection
-dependencies[] = tapas_feature_content_labnote
-dependencies[] = tapas_feature_content_project
 dependencies[] = tapas_feature_content_tapasrecord_as_content
+dependencies[] = tapas_feature_content_profile
 dependencies[] = tapas_feature_menu_main
 dependencies[] = tapas_feature_taxonomy_institution
 dependencies[] = tapas_feature_view_group_members
+dependencies[] = tapas_feature_tapascollection

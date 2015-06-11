@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node_export created="Thu, 11 Jun 2015 12:23:16 +0000">
+  <node>
+    <vid>2</vid>
+    <uid>1</uid>
+    <title>About</title>
+    <log></log>
+    <status>1</status>
+    <comment>2</comment>
+    <promote>1</promote>
+    <sticky>0</sticky>
+    <vuuid>cecf7d28-a00a-462a-8095-e24764d1868f</vuuid>
+    <nid>2</nid>
+    <type>tapas_staticpage</type>
+    <language>und</language>
+    <created>1434025198</created>
+    <changed>1434025198</changed>
+    <tnid>0</tnid>
+    <translate>0</translate>
+    <uuid>4b5fcb9b-4812-43a8-ad43-f27b4da3e3f3</uuid>
+    <revision_timestamp>1434025198</revision_timestamp>
+    <revision_uid>1</revision_uid>
+    <body>
+      <und _numeric_keys="1">
+        <n0>
+          <value>      &lt;h2&gt;Mission&lt;/h2&gt;
+&lt;p&gt;The goal of TAPAS is to provide TEI publishing and repository services at low cost to those who lack institutional resources: faculty, students, librarians, archivists, teachers, and anyone else with TEI data who wants to store, share, and publish it. TAPAS seeks to achieve these goals in a collaborative, open, and community-driven way using open-source tools. The TAPAS project is a collaborative effort involving many institutions and people who support TAPAS in many different ways: hosting the service, contributing to the project's development, providing beta-testing and test data, and serving in advisory roles. &lt;/p&gt;
+&lt;h2&gt;People&lt;/h2&gt;
+&lt;h3&gt;TAPAS Staff&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Linda Moss, Drupal Developer&lt;/li&gt;
+&lt;li&gt;Syd Bauman, TEI analyst&lt;/li&gt;
+&lt;li&gt;Ashley Clark, XML programmer&lt;/li&gt;
+&lt;li&gt;Benjamin Doyle, Project Manager&lt;/li&gt;
+&lt;li&gt;Julia Flanders, TAPAS co-director&lt;/li&gt;
+&lt;li&gt;Scott Hamlin, TAPAS co-director&lt;/li&gt;
+&lt;li&gt;Will Jackson, Hydra programmer&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;TAPAS Advisory Board&lt;/h3&gt;
+&lt;p&gt;The TAPAS steering committee includes representatives of hosting institutions, representatives of the TEI Consortium, coopted members representing areas of key expertise and strategic partnerships, and four community representatives elected by the TEI membership. Elections will be held in conjunction with the TEI’s 2015 elections. &lt;/p&gt;
+&lt;p&gt;The current members of the steering committee are:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;James Cummings, Oxford University&lt;/li&gt;
+&lt;li&gt;Laurent Romary, INRIA &lt;/li&gt;
+&lt;li&gt;John Unsworth, Brandeis University&lt;/li&gt;
+&lt;li&gt;Julia Flanders, Northeastern University&lt;/li&gt;
+&lt;li&gt;Scott Hamlin, Wheaton College&lt;/li&gt;
+&lt;li&gt;Patrick Yott, Northeastern University&lt;/li&gt;
+&lt;li&gt;Andrew Ashton, Brown University&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We invite you to learn more about the TAPAS project, its members, and its services by following the &lt;a href=&quot;http://tapasproject.org/browse-tapas&quot;&gt;Explore TAPAS&lt;/a&gt; tab. &lt;/p&gt;</value>
+          <summary></summary>
+          <format>full_html</format>
+          <safe_value>      &lt;h2&gt;Mission&lt;/h2&gt;
+&lt;p&gt;The goal of TAPAS is to provide TEI publishing and repository services at low cost to those who lack institutional resources: faculty, students, librarians, archivists, teachers, and anyone else with TEI data who wants to store, share, and publish it. TAPAS seeks to achieve these goals in a collaborative, open, and community-driven way using open-source tools. The TAPAS project is a collaborative effort involving many institutions and people who support TAPAS in many different ways: hosting the service, contributing to the project's development, providing beta-testing and test data, and serving in advisory roles. &lt;/p&gt;
+&lt;h2&gt;People&lt;/h2&gt;
+&lt;h3&gt;TAPAS Staff&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Linda Moss, Drupal Developer&lt;/li&gt;
+&lt;li&gt;Syd Bauman, TEI analyst&lt;/li&gt;
+&lt;li&gt;Ashley Clark, XML programmer&lt;/li&gt;
+&lt;li&gt;Benjamin Doyle, Project Manager&lt;/li&gt;
+&lt;li&gt;Julia Flanders, TAPAS co-director&lt;/li&gt;
+&lt;li&gt;Scott Hamlin, TAPAS co-director&lt;/li&gt;
+&lt;li&gt;Will Jackson, Hydra programmer&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;TAPAS Advisory Board&lt;/h3&gt;
+&lt;p&gt;The TAPAS steering committee includes representatives of hosting institutions, representatives of the TEI Consortium, coopted members representing areas of key expertise and strategic partnerships, and four community representatives elected by the TEI membership. Elections will be held in conjunction with the TEI’s 2015 elections. &lt;/p&gt;
+&lt;p&gt;The current members of the steering committee are:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;James Cummings, Oxford University&lt;/li&gt;
+&lt;li&gt;Laurent Romary, INRIA &lt;/li&gt;
+&lt;li&gt;John Unsworth, Brandeis University&lt;/li&gt;
+&lt;li&gt;Julia Flanders, Northeastern University&lt;/li&gt;
+&lt;li&gt;Scott Hamlin, Wheaton College&lt;/li&gt;
+&lt;li&gt;Patrick Yott, Northeastern University&lt;/li&gt;
+&lt;li&gt;Andrew Ashton, Brown University&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We invite you to learn more about the TAPAS project, its members, and its services by following the &lt;a href=&quot;http://tapasproject.org/browse-tapas&quot;&gt;Explore TAPAS&lt;/a&gt; tab. &lt;/p&gt;</safe_value>
+          <safe_summary></safe_summary>
+        </n0>
+      </und>
+    </body>
+    <rdf_mapping>
+      <rdftype _numeric_keys="1">
+        <n0>sioc:Item</n0>
+        <n1>foaf:Document</n1>
+      </rdftype>
+      <title>
+        <predicates _numeric_keys="1">
+          <n0>dc:title</n0>
+        </predicates>
+      </title>
+      <created>
+        <predicates _numeric_keys="1">
+          <n0>dc:date</n0>
+          <n1>dc:created</n1>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </created>
+      <changed>
+        <predicates _numeric_keys="1">
+          <n0>dc:modified</n0>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </changed>
+      <body>
+        <predicates _numeric_keys="1">
+          <n0>content:encoded</n0>
+        </predicates>
+      </body>
+      <uid>
+        <predicates _numeric_keys="1">
+          <n0>sioc:has_creator</n0>
+        </predicates>
+        <type>rel</type>
+      </uid>
+      <name>
+        <predicates _numeric_keys="1">
+          <n0>foaf:name</n0>
+        </predicates>
+      </name>
+      <comment_count>
+        <predicates _numeric_keys="1">
+          <n0>sioc:num_replies</n0>
+        </predicates>
+        <datatype>xsd:integer</datatype>
+      </comment_count>
+      <last_activity>
+        <predicates _numeric_keys="1">
+          <n0>sioc:last_activity_date</n0>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </last_activity>
+    </rdf_mapping>
+    <cid>0</cid>
+    <last_comment_timestamp>1434025198</last_comment_timestamp>
+    <last_comment_name type="NULL"></last_comment_name>
+    <last_comment_uid>1</last_comment_uid>
+    <comment_count>0</comment_count>
+    <name>admin</name>
+    <picture>0</picture>
+    <data>b:0;</data>
+    <path>
+      <pid>2</pid>
+      <source>node/2</source>
+      <alias>about</alias>
+      <language>und</language>
+    </path>
+    <menu>
+      <link_title>About</link_title>
+      <mlid>0</mlid>
+      <plid>0</plid>
+      <menu_name>main-menu</menu_name>
+      <weight>-50</weight>
+      <options _numeric_keys="1"></options>
+      <module>menu</module>
+      <expanded>0</expanded>
+      <hidden>0</hidden>
+      <has_children>0</has_children>
+      <customized>0</customized>
+      <parent_depth_limit>8</parent_depth_limit>
+      <description></description>
+      <enabled>1</enabled>
+    </menu>
+    <node_export_drupal_version>7</node_export_drupal_version>
+  </node>
+</node_export>

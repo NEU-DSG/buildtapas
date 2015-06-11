@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node_export created="Thu, 11 Jun 2015 12:23:19 +0000">
+  <node>
+    <vid>3</vid>
+    <uid>1</uid>
+    <title>Discover</title>
+    <log></log>
+    <status>1</status>
+    <comment>2</comment>
+    <promote>0</promote>
+    <sticky>0</sticky>
+    <vuuid>cb7f108d-db6e-44e6-aaf1-2925a05bbaa8</vuuid>
+    <nid>3</nid>
+    <type>tapas_staticpage</type>
+    <language>und</language>
+    <created>1434025305</created>
+    <changed>1434025305</changed>
+    <tnid>0</tnid>
+    <translate>0</translate>
+    <uuid>991c2674-f3ee-4291-b0bb-0ae640a51b43</uuid>
+    <revision_timestamp>1434025305</revision_timestamp>
+    <revision_uid>1</revision_uid>
+    <body _numeric_keys="1"></body>
+    <rdf_mapping>
+      <rdftype _numeric_keys="1">
+        <n0>sioc:Item</n0>
+        <n1>foaf:Document</n1>
+      </rdftype>
+      <title>
+        <predicates _numeric_keys="1">
+          <n0>dc:title</n0>
+        </predicates>
+      </title>
+      <created>
+        <predicates _numeric_keys="1">
+          <n0>dc:date</n0>
+          <n1>dc:created</n1>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </created>
+      <changed>
+        <predicates _numeric_keys="1">
+          <n0>dc:modified</n0>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </changed>
+      <body>
+        <predicates _numeric_keys="1">
+          <n0>content:encoded</n0>
+        </predicates>
+      </body>
+      <uid>
+        <predicates _numeric_keys="1">
+          <n0>sioc:has_creator</n0>
+        </predicates>
+        <type>rel</type>
+      </uid>
+      <name>
+        <predicates _numeric_keys="1">
+          <n0>foaf:name</n0>
+        </predicates>
+      </name>
+      <comment_count>
+        <predicates _numeric_keys="1">
+          <n0>sioc:num_replies</n0>
+        </predicates>
+        <datatype>xsd:integer</datatype>
+      </comment_count>
+      <last_activity>
+        <predicates _numeric_keys="1">
+          <n0>sioc:last_activity_date</n0>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </last_activity>
+    </rdf_mapping>
+    <cid>0</cid>
+    <last_comment_timestamp>1434025305</last_comment_timestamp>
+    <last_comment_name type="NULL"></last_comment_name>
+    <last_comment_uid>1</last_comment_uid>
+    <comment_count>0</comment_count>
+    <name>admin</name>
+    <picture>0</picture>
+    <data>b:0;</data>
+    <path>
+      <pid>3</pid>
+      <source>node/3</source>
+      <alias>discover</alias>
+      <language>und</language>
+    </path>
+    <menu>
+      <link_title>Discover</link_title>
+      <mlid>0</mlid>
+      <plid>0</plid>
+      <menu_name>main-menu</menu_name>
+      <weight>-49</weight>
+      <options _numeric_keys="1"></options>
+      <module>menu</module>
+      <expanded>0</expanded>
+      <hidden>0</hidden>
+      <has_children>0</has_children>
+      <customized>0</customized>
+      <parent_depth_limit>8</parent_depth_limit>
+      <description></description>
+      <enabled>1</enabled>
+    </menu>
+    <node_export_drupal_version>7</node_export_drupal_version>
+  </node>
+</node_export>

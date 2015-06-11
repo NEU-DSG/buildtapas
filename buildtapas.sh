@@ -38,7 +38,7 @@ echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
-echo "projects[buildtapas][download][branch] = master" >> stub.make
+echo "projects[buildtapas][download][branch] = development" >> stub.make
 echo "projects[buildtapas][download][working-copy] = TRUE" >> stub.make
 
 ## III. Run the stub.make
@@ -81,7 +81,10 @@ echo "=============================================="
 # http://drupal.stackexchange.com/questions/159023/set-variable-site-name-in-installation-profile
 # Inelegant solution since it bypasses localization, but it does the job for now.
 drush -y vset site_name "TAPAS Project"
-drush -y vset theme_default "tapas_redesign_subtheme"
+drush -y vset theme_default "tapas_redesign"
+drush -y vset clean_url TRUE
+drush -y vset user_pictures TRUE
+drush -y vset user_picture_dimentions "200x200"
 
 # Turning off some modules that the 'standard' profile turns on
 drush -y dis dashboard overlay shortcut toolbar

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node_export created="Thu, 11 Jun 2015 12:15:54 +0000">
+  <node>
+    <vid>1</vid>
+    <uid>1</uid>
+    <title>Home</title>
+    <log></log>
+    <status>1</status>
+    <comment>1</comment>
+    <promote>1</promote>
+    <sticky>0</sticky>
+    <vuuid>79d60111-9e59-478c-8f45-b1677e572fcb</vuuid>
+    <nid>1</nid>
+    <type>tapas_staticpage</type>
+    <language>und</language>
+    <created>1434024468</created>
+    <changed>1434024837</changed>
+    <tnid>0</tnid>
+    <translate>0</translate>
+    <uuid>922d1d39-6137-4721-bd5a-d72e2fa51dc9</uuid>
+    <revision_timestamp>1434024837</revision_timestamp>
+    <revision_uid>1</revision_uid>
+    <body>
+      <und _numeric_keys="1">
+        <n0>
+          <value>    &lt;section class=&quot;header&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;h1&gt;Store, Visualize, and Share Your TEI&lt;h1&gt;
+              &lt;br/&gt;
+            &lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-info&quot;&gt;Sign Up&lt;/a&gt;
+            &lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-default&quot;&gt;Learn More&lt;/a&gt;
+            &lt;br/&gt;
+          &lt;/div&gt;&lt;!-- /.col-lg-4 --&gt;
+        &lt;/div&gt;&lt;!-- /.row --&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;section class=&quot;pillars&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Store&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-inbox fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;Open access to a digital repository designed for secure, long-term storage of TEI data, hosted and curated by Northeastern University&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Visualize&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-bar-chart fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;Experiment with and output your TEI in a variety of forms, such as a website, data visualization, or print copy&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Explore &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Share&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-share-alt fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;Invite collaborators and contributors to your TEI projects and enter into a community of practitioners who share and support the growth and development of TEI&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;carousel&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h2&gt;Featured Projects and Collections&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot;&gt;
+
+                &lt;!--&lt;ol class=&quot;carousel-indicators&quot;&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+                &lt;/ol&gt;--&gt;
+
+                &lt;!-- Carousel items --&gt;
+                &lt;div class=&quot;carousel-inner&quot;&gt;
+
+                &lt;div class=&quot;item active&quot;&gt;
+                	&lt;div class=&quot;row-fluid text-center&quot;&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot;/&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot;/&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	&lt;/div&gt;&lt;!--/row-fluid--&gt;
+                &lt;/div&gt;&lt;!--/item--&gt;
+
+                &lt;div class=&quot;item&quot;&gt;
+                  &lt;div class=&quot;row-fluid text-center&quot;&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot;/&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot;/&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	&lt;/div&gt;&lt;!--/row-fluid--&gt;
+                &lt;/div&gt;&lt;!--/item--&gt;
+
+                &lt;div class=&quot;item&quot;&gt;
+                  &lt;div class=&quot;row-fluid text-center&quot;&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot;/&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot;/&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	&lt;/div&gt;&lt;!--/row-fluid--&gt;
+                &lt;/div&gt;&lt;!--/item--&gt;
+
+                &lt;/div&gt;&lt;!--/carousel-inner--&gt;
+
+                &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;‹&lt;/a&gt;
+                &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;›&lt;/a&gt;
+                &lt;/div&gt;&lt;!--/myCarousel--&gt;
+                &lt;br/&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12 text-center&quot;&gt;
+          &lt;a class=&quot;btn btn-xlg btn-info&quot;&gt;Explore Tapas&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;testimonials&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h2&gt;Testimonials&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+          &lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+          &lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+          &lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;hr&gt;
+
+  &lt;section class=&quot;membership&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h2&gt;Membership&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
+          &lt;table class=&quot;table table-bordered&quot;&gt;
+            &lt;tr&gt;
+              &lt;th&gt;&lt;/th&gt;&lt;th&gt;Free Tapas Membership&lt;/th&gt;&lt;th&gt;Tapas and TEI Membership&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Cost&lt;/td&gt;
+              &lt;td&gt;Free&lt;/td&gt;
+              &lt;td&gt;Paid&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Contribute to Projects&lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Create Projects&lt;/td&gt;
+              &lt;td&gt;
+
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Contribute to Collections&lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Create Collections&lt;/td&gt;
+              &lt;td&gt;
+
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Be Invited to Collaborate on existing projects and collections&lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Invite others to Collaborate on existing projects and collections&lt;/td&gt;
+              &lt;td&gt;
+
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;sponsors&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h3&gt;Generously Funded By&lt;/h3&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/tei_white.png&quot; class=&quot;logo&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/imls_white.png&quot; class=&quot;logo&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/neh_white.png&quot; class=&quot;logo neh&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;</value>
+          <summary></summary>
+          <format>full_html</format>
+          <safe_value>    &lt;section class=&quot;header&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;h1&gt;Store, Visualize, and Share Your TEI&lt;h1&gt;
+              &lt;br /&gt;&lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-info&quot;&gt;Sign Up&lt;/a&gt;
+            &lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-default&quot;&gt;Learn More&lt;/a&gt;
+            &lt;br /&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/div&gt;&lt;!-- /.col-lg-4 --&gt;
+        &lt;/div&gt;&lt;!-- /.row --&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;&lt;section class=&quot;pillars&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Store&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-inbox fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;Open access to a digital repository designed for secure, long-term storage of TEI data, hosted and curated by Northeastern University&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More »&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Visualize&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-bar-chart fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;Experiment with and output your TEI in a variety of forms, such as a website, data visualization, or print copy&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Explore »&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Share&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-share-alt fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;Invite collaborators and contributors to your TEI projects and enter into a community of practitioners who share and support the growth and development of TEI&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More »&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;&lt;section class=&quot;carousel&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h2&gt;Featured Projects and Collections&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot;&gt;
+
+                &lt;!--&lt;ol class=&quot;carousel-indicators&quot;&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+                &lt;/ol&gt;--&gt;
+
+                &lt;!-- Carousel items --&gt;
+                &lt;div class=&quot;carousel-inner&quot;&gt;
+
+                &lt;div class=&quot;item active&quot;&gt;
+                	&lt;div class=&quot;row-fluid text-center&quot;&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	&lt;/div&gt;&lt;!--/row-fluid--&gt;
+                &lt;/div&gt;&lt;!--/item--&gt;
+
+                &lt;div class=&quot;item&quot;&gt;
+                  &lt;div class=&quot;row-fluid text-center&quot;&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	&lt;/div&gt;&lt;!--/row-fluid--&gt;
+                &lt;/div&gt;&lt;!--/item--&gt;
+
+                &lt;div class=&quot;item&quot;&gt;
+                  &lt;div class=&quot;row-fluid text-center&quot;&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	  &lt;div class=&quot;col-sm-3&quot;&gt;
+                      &lt;a href=&quot;#x&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Image&quot; class=&quot;img-rounded&quot; /&gt;&lt;/a&gt;
+                      &lt;h4&gt;Project Title&lt;/h4&gt;
+                      &lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Visit Project&lt;/a&gt;
+                    &lt;/div&gt;
+                	&lt;/div&gt;&lt;!--/row-fluid--&gt;
+                &lt;/div&gt;&lt;!--/item--&gt;
+
+                &lt;/div&gt;&lt;!--/carousel-inner--&gt;
+
+                &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;‹&lt;/a&gt;
+                &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;›&lt;/a&gt;
+                &lt;/div&gt;&lt;!--/myCarousel--&gt;
+                &lt;br /&gt;&lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12 text-center&quot;&gt;
+          &lt;a class=&quot;btn btn-xlg btn-info&quot;&gt;Explore Tapas&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;&lt;section class=&quot;testimonials&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h2&gt;Testimonials&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;&lt;hr /&gt;&lt;section class=&quot;membership&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h2&gt;Membership&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
+          &lt;table class=&quot;table table-bordered&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Free Tapas Membership&lt;/th&gt;&lt;th&gt;Tapas and TEI Membership&lt;/th&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cost&lt;/td&gt;
+              &lt;td&gt;Free&lt;/td&gt;
+              &lt;td&gt;Paid&lt;/td&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contribute to Projects&lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Create Projects&lt;/td&gt;
+              &lt;td&gt;
+
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contribute to Collections&lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Create Collections&lt;/td&gt;
+              &lt;td&gt;
+
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Be Invited to Collaborate on existing projects and collections&lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Invite others to Collaborate on existing projects and collections&lt;/td&gt;
+              &lt;td&gt;
+
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;&lt;section class=&quot;sponsors&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-12&quot;&gt;
+          &lt;h3&gt;Generously Funded By&lt;/h3&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/tei_white.png&quot; class=&quot;logo&quot; /&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/imls_white.png&quot; class=&quot;logo&quot; /&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-sm-4&quot;&gt;
+          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/neh_white.png&quot; class=&quot;logo neh&quot; /&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;</safe_value>
+          <safe_summary></safe_summary>
+        </n0>
+      </und>
+    </body>
+    <rdf_mapping>
+      <rdftype _numeric_keys="1">
+        <n0>sioc:Item</n0>
+        <n1>foaf:Document</n1>
+      </rdftype>
+      <title>
+        <predicates _numeric_keys="1">
+          <n0>dc:title</n0>
+        </predicates>
+      </title>
+      <created>
+        <predicates _numeric_keys="1">
+          <n0>dc:date</n0>
+          <n1>dc:created</n1>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </created>
+      <changed>
+        <predicates _numeric_keys="1">
+          <n0>dc:modified</n0>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </changed>
+      <body>
+        <predicates _numeric_keys="1">
+          <n0>content:encoded</n0>
+        </predicates>
+      </body>
+      <uid>
+        <predicates _numeric_keys="1">
+          <n0>sioc:has_creator</n0>
+        </predicates>
+        <type>rel</type>
+      </uid>
+      <name>
+        <predicates _numeric_keys="1">
+          <n0>foaf:name</n0>
+        </predicates>
+      </name>
+      <comment_count>
+        <predicates _numeric_keys="1">
+          <n0>sioc:num_replies</n0>
+        </predicates>
+        <datatype>xsd:integer</datatype>
+      </comment_count>
+      <last_activity>
+        <predicates _numeric_keys="1">
+          <n0>sioc:last_activity_date</n0>
+        </predicates>
+        <datatype>xsd:dateTime</datatype>
+        <callback>date_iso8601</callback>
+      </last_activity>
+    </rdf_mapping>
+    <cid>0</cid>
+    <last_comment_timestamp>1434024468</last_comment_timestamp>
+    <last_comment_name type="NULL"></last_comment_name>
+    <last_comment_uid>1</last_comment_uid>
+    <comment_count>0</comment_count>
+    <name>admin</name>
+    <picture>0</picture>
+    <data>b:0;</data>
+    <path>
+      <pid>1</pid>
+      <source>node/1</source>
+      <alias>home</alias>
+      <language>und</language>
+    </path>
+    <menu type="NULL"></menu>
+    <node_export_drupal_version>7</node_export_drupal_version>
+  </node>
+</node_export>
