@@ -2,11 +2,11 @@ api = 2
 core = 7.37
 
 ; Added for theme
-;projects[jquery_update][subdir] = contrib
-;projects[block_class][subdir] = contrib
-;projects[features_extra][subdir] = contrib
-;projects[views_bootstrap][subdir] = contrib
-;projects[ds][subdir] = contrib
+projects[jquery_update][subdir] = contrib
+projects[block_class][subdir] = contrib
+projects[features_extra][subdir] = contrib
+projects[views_bootstrap][subdir] = contrib
+projects[ds][subdir] = contrib
 
 
 
@@ -47,9 +47,8 @@ projects[devel][subdir] = develop
 ;projects[checklistapi][subdir] = develop
 ;projects[qa_checklist][subdir] = develop
 projects[advanced_help][subdir] = develop
-;projects[coder][subdir] = develop
 projects[site_install_hooks][subdir] = develop
-;projects[diff][subdir] = develop
+projects[diff][subdir] = develop
 
 ; custom 
 projects[tapas-modules][type] = module
