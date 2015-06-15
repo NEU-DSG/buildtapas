@@ -2,6 +2,8 @@
 
 function tapas_user_setup() {
 
+	drupal_set_message("tapas_user_setup() called");
+
   // Enable user picture support and set the default to a square thumbnail option.
   variable_set('user_pictures', '1');
   variable_set('user_picture_dimensions', '1024x1024');
@@ -46,7 +48,7 @@ function tapas_user_setup() {
 		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 	
-
+	drupal_set_message("tapas_user_setup() completed");
 }
 
 /**
