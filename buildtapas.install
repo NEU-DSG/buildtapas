@@ -13,10 +13,14 @@ include_once 'buildtapas_usersettings.inc';
  */
 function buildtapas_install() {
 
+	echo "DEBUGGING: begining buildtapas_install()";
+
 	_tapas_create_filter_formats();
 	_tapas_rdf();
 
+	echo "DEBUGGING: about to call tapas_user_setup()";
 	tapas_user_setup();
+	echo "DEBUGGING: returned from tapas_user_setup()";
 
 	// Enable the admin theme.
   db_update('system')
@@ -26,6 +30,8 @@ function buildtapas_install() {
     ->execute();
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
+
+	echo "DEBUGGING: finished buildtapas_install()";
 
 }
 
