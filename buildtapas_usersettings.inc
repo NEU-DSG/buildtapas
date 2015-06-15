@@ -2,7 +2,6 @@
 
 function tapas_user_setup() {
 
-	drupal_set_message("tapas_user_setup() called");
 	echo "DEBUGGING: tapas_user_setup() called";
 
   // Enable user picture support and set the default to a square thumbnail option.
@@ -22,15 +21,21 @@ function tapas_user_setup() {
 		'access comments',
 	);
 
+	echo "DEBUGGING: var_dump(anonymous_permissions) is: " . var_dump($anonymous_permissions);
+
 	$registered_permissions = array_merge(
 		$annonymous_permissions,
 		array(
 			'post_comments',
 			'skip_comment_approval'));
 
+	echo "DEBUGGING: var_dump(registered_permissions) is: " . var_dump($registered_permissions);
+
 	$paidmember_permissions = array_merge(
 		$registered_permissions,
 		array());
+
+	echo "DEBUGGING: var_dump(paidmember_permissions) is: " . var_dump($paidmember_permissions);
 
 	user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, $anonymous_permissions);
 	user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, $registered_permissions);
@@ -49,7 +54,6 @@ function tapas_user_setup() {
 		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 	
-	drupal_set_message("tapas_user_setup() completed");
 	echo "DEBUGGING: tapas_user_setup() completed.";
 }
 
