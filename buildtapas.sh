@@ -35,7 +35,7 @@ echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
-echo "projects[buildtapas][download][branch] = develop" >> stub.make
+echo "projects[buildtapas][download][branch] = feature/roles-permissions" >> stub.make
 echo "projects[buildtapas][download][working-copy] = TRUE" >> stub.make
 
 ## III. Run the stub.make
