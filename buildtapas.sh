@@ -32,6 +32,9 @@ echo "projects[drupal][version] = 7.37" >> stub.make;
 echo "projects[drupal][patch][] = https://www.drupal.org/files/1093420-22.patch" >> stub.make;
 echo "projects[drupal][patch][] = https://www.drupal.org/files/issues/comment-node-type-delete-1565892-3.patch" >> stub.make;
 echo "" >> stub.make;
+# This patch is to prevent user_role_grant_permissions from crashing
+echo "projects[drupal][patch[] = https://www.drupal.org/files/user_role_grant_permission_fails_when_module_is_missing-1249952-2.patch" >> stub.make;
+echo "" >> stub.make;
 echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
