@@ -6,9 +6,16 @@
  */
 function buildtapas_do_user_settings() {
 
+	echo "DEBUGGING: beginning buildtapas_do_user_settings()
+	";
+
 	user_role_grant_permissions(
 		DRUPAL_ANONYMOUS_RID,
 		_buildtapas_get_anonymous_user_permissions());
+
+
+	echo "DEBUGGING: finished anonymous grant permissions
+	";
 
   variable_set('user_pictures', '1');
   variable_set('user_picture_dimensions', '1024x1024');
@@ -18,6 +25,9 @@ function buildtapas_do_user_settings() {
 	user_role_grant_permissions(
 		DRUPAL_AUTHENTICATED_RID, 
 		_buildtapas_get_registered_user_permissions());
+
+	echo "DEBUGGING: finished authenticated grant permissions
+	";
 
 /*
 	_buildtapas_create_role(
@@ -32,11 +42,18 @@ function buildtapas_do_user_settings() {
 */
 
 	$admin_permissions = array_keys(module_invoke_all('permission'));
+
+	echo "DEBUGGING: Set admin_permissions array
+	";
+
 	$admin_role = _buildtapas_create_role('administrator', $admin_permissions,	 5);
   variable_set('user_admin_role', $admin_role->rid);
   db_insert('users_roles')
 		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
+
+	echo "DEBUGGING: completed do_user_settings routine.
+	";
 
 }
 
