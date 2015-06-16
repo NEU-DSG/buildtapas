@@ -21,12 +21,11 @@ function tapas_user_setup() {
 		'access content',
 		'access comments',
 	);
-
 	echo "DEBUGGING: var_dump(anonymous_permissions) is: " . var_dump($anonymous_permissions) . "
 	";
 
 	$registered_permissions = array_merge(
-		$annonymous_permissions,
+		$anonymous_permissions,
 		array(
 			'post_comments',
 			'skip_comment_approval'));
