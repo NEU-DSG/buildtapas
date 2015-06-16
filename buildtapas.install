@@ -16,7 +16,11 @@ function buildtapas_install() {
 	_tapas_create_filter_formats();
 	_tapas_rdf();
 
-	tapas_user_setup();
+	user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, ANONYMOUS_BASE_PERMISSIONS);
+	tapas_registered_user_setup();
+	tapas_paidmember_user_setup();
+	tapas_siteeditor_user_setup();
+	tapas_administrator_user_setup();
 
 	// Enable the admin theme.
   db_update('system')
