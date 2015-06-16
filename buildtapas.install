@@ -13,14 +13,10 @@ include_once 'buildtapas_usersettings.inc';
  */
 function buildtapas_install() {
 
-	_tapas_create_filter_formats();
-	_tapas_rdf();
+	_buildtapas_create_filter_formats();
+	_buildtapas_rdf();
 
-	user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, ANONYMOUS_BASE_PERMISSIONS);
-	tapas_registered_user_setup();
-	tapas_paidmember_user_setup();
-	tapas_siteeditor_user_setup();
-	tapas_administrator_user_setup();
+	_buildtapas_do_user_settings();
 
 	// Enable the admin theme.
   db_update('system')
@@ -38,7 +34,7 @@ function buildtapas_install() {
  * These are identical to the filters created by
  * the standard installation profile.
  */
-function _tapas_create_filter_formats() {
+function _buildtapas_create_filter_formats() {
 
 	$base_filters = array(
 		'filter_url' => array('weight' => 0, 'status' => 1, ),
@@ -73,7 +69,7 @@ function _tapas_create_filter_formats() {
  * These are the same rdf mappings as would be added by the standard profile.
  */
 
-function _tapas_rdf() {
+function _buildtapas_rdf() {
 
   $rdf_mappings = array(
     array(
