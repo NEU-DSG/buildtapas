@@ -82,7 +82,7 @@ function _buildtapas_content_permissions_loop($types, $perms) {
  */
 function _buildtapas_get_anonymous_user_permissions() {
 
-	$base = array(
+	return array(
 		'access content',
 		'access comments',
 	);
