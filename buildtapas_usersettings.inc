@@ -2,9 +2,6 @@
 
 function tapas_user_setup() {
 
-	echo "DEBUGGING: tapas_user_setup() called
-	";
-
   // Enable user picture support and set the default to a square thumbnail option.
   variable_set('user_pictures', '1');
   variable_set('user_picture_dimensions', '1024x1024');
@@ -21,8 +18,6 @@ function tapas_user_setup() {
 		'access content',
 		'access comments',
 	);
-	echo "DEBUGGING: var_dump(anonymous_permissions) is: " . var_dump($anonymous_permissions) . "
-	";
 
 	$registered_permissions = array_merge(
 		$anonymous_permissions,
@@ -30,33 +25,20 @@ function tapas_user_setup() {
 			'post comments',
 			'skip comment approval'));
 
-	echo "DEBUGGING: var_dump(registered_permissions) is: " . var_dump($registered_permissions) . "
-	";
 
 	$paidmember_permissions = array_merge(
 		$registered_permissions,
 		array());
 
-	echo "DEBUGGING: var_dump(paidmember_permissions) is: " . var_dump($paidmember_permissions) . "
-	";
-
-
-	echo "DEBUGGING: About to call user_role_grant_permissions
-	";
-
 	user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, $anonymous_permissions);
 	user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, $registered_permissions);
 
-	echo "DEBUGGING: Create roles
-	";
 	// Create Roles
 	$admin_permissions = array_keys(module_invoke_all('permission'));
 
 	_tapas_create_role('paidmember', $paidmember_permissions, 3);
 	$admin_role = _tapas_create_role('administrator', $admin_permissions,	 4);
 
-	echo "DEBUGGING: Set administrator role
-	";
 
   // Set this as the administrator role.
   variable_set('user_admin_role', $admin_role->rid);
@@ -66,8 +48,6 @@ function tapas_user_setup() {
 		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 	
-	echo "DEBUGGING: tapas_user_setup() completed.
-	";
 }
 
 /**
