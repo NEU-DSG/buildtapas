@@ -27,8 +27,8 @@ function tapas_user_setup() {
 	$registered_permissions = array_merge(
 		$anonymous_permissions,
 		array(
-			'post_comments',
-			'skip_comment_approval'));
+			'post comments',
+			'skip comment approval'));
 
 	echo "DEBUGGING: var_dump(registered_permissions) is: " . var_dump($registered_permissions) . "
 	";
