@@ -17,7 +17,7 @@ function tapas_user_setup() {
   // Enable default permissions for system roles.
 	
 	$anonymous_permissions = array(
-		filter_permission_name($filtered_html_format),
+		'filtered_html_format',
 		'access content',
 		'access comments',
 	);

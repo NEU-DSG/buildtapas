@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## I. Usage statement
-if [ "$5" == "" ]
+if [ "$4" == "" ]
 then
 	echo "Usage:";
 	echo "tapasbuild.sh has FOUR arguments, all mandatory:";
