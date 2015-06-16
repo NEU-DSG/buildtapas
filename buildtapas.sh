@@ -1,19 +1,19 @@
 #!/bin/bash
 
 ## I. Usage statement
-if [ "$4" == "" ]
+if [ "$5" == "" ]
 then
 	echo "Usage:";
-	echo "tapasbuild.sh has FOUR arguments, all mandatory:";
+	echo "tapasbuild.sh has five arguments, all mandatory:";
 	echo "   * Username of an existing MySQL account with";
 	echo "     sufficient permissions to create a database";
+	echo "   * Password for the above user";
 	echo "   * Name of the new drupal database to create";
 	echo "   * Username that drupal should use to";
 	echo "     manage this database";
 	echo "   * Password that drupal should use to access";
 	echo "     this database";
 	echo "";
-	echo "The script will prompt you ONCE for the password to the chosen MySQL account, and then proceed through the rest of the process automatically.";
 	exit;
 fi
 
