@@ -1,5 +1,31 @@
 <?php
 
+function buildtapas_check_permissions_array($perms) {
+
+	$all_perms = array_keys(user_permission_get_modules());
+	$err_check = array_diff($perms, $all_perms);
+
+	if ($err_check) {
+		echo "
+		################################
+		found unrecognized permissions:
+		";
+
+		foreach ($err_check as $err) {
+			echo "$err
+			";
+		}
+
+		echo "
+		################################
+		";
+		exit(1);
+	}
+
+	return $perms;
+}
+
+
 
 /**
  *	Set up user settings and permissions.
@@ -21,6 +47,7 @@ function buildtapas_do_user_settings() {
   variable_set('user_picture_dimensions', '1024x1024');
   variable_set('user_picture_file_size', '800');
   variable_set('user_picture_style', 'thumbnail');
+
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 	user_role_grant_permissions(
 		DRUPAL_AUTHENTICATED_RID, 
@@ -103,6 +130,7 @@ function _buildtapas_get_anonymous_user_permissions() {
 		'access content',
 		'access comments',
 	);
+
 }
 
 /**
@@ -148,6 +176,7 @@ function _buildtapas_get_registered_user_permissions() {
 
 	echo "DEBUGGING: complete is " . var_dump($complete) . " ####";
 
+	buildtapas_check_permissions_array($complete);
 	return $complete;
 
 }
@@ -186,11 +215,15 @@ function _buildtapas_get_paidmember_user_permissions() {
 		)
 	);
 
-	return array_merge(
+	$complete = array_merge(
 		_buildtapas_get_registered_user_permissions(),
 		$base,
 		$tapas_content_perms,
 		$general_content_perms);
+
+	buildtapas_check_permissions_array($complete);
+
+	return $complete;
 
 }
 
@@ -237,8 +270,11 @@ function _buildtapas_get_siteeditor_user_permissions() {
 			'delete any')
 	);
 
-	return array_merge(
+	$complete = array_merge(
 		_buildtapas_get_paidmember_user_permissions(),
 		$base,
 		$content_perms);
+
+	buildtapas_check_permissions_array($complete);
+	return $complete;
 }
