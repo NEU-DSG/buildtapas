@@ -40,14 +40,23 @@ function tapas_user_setup() {
 	echo "DEBUGGING: var_dump(paidmember_permissions) is: " . var_dump($paidmember_permissions) . "
 	";
 
+
+	echo "DEBUGGING: About to call user_role_grant_permissions
+	";
+
 	user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, $anonymous_permissions);
 	user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, $registered_permissions);
 
+	echo "DEBUGGING: Create roles
+	";
 	// Create Roles
 	$admin_permissions = array_keys(module_invoke_all('permission'));
 
 	_tapas_create_role('paidmember', $paidmember_permissions, 3);
 	$admin_role = _tapas_create_role('administrator', $admin_permissions,	 4);
+
+	echo "DEBUGGING: Set administrator role
+	";
 
   // Set this as the administrator role.
   variable_set('user_admin_role', $admin_role->rid);
