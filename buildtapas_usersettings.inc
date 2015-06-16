@@ -138,10 +138,17 @@ function _buildtapas_get_registered_user_permissions() {
 		)
 	);
 
-	return array_merge(
+	echo "DEBUGGING: base is " . var_dump($base) . " ####";
+	echo "DEBUGGING: content is " .var_dump($content_perms) . " ####";
+
+	$complete = array_merge(
 		_buildtapas_get_anonymous_user_permissions(),
 		$base,
 		$content_perms);
+
+	echo "DEBUGGING: complete is " . var_dump($complete) . " ####";
+
+	return $complete;
 
 }
 
