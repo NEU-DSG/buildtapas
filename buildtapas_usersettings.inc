@@ -225,7 +225,7 @@ function _buildtapas_get_siteeditor_user_permissions() {
 
 	$base = array(
 		'edit site follow links', #follow module
-		'change link titles', #follow module
+		'change follow link titles', #follow module
 		'administer forums',
 		'bypass node access',
 		'access content overview',
@@ -249,8 +249,8 @@ function _buildtapas_get_siteeditor_user_permissions() {
 			'tapascollection_collection',
 			'tapasrecordnode',
 			'forum',
-			'tapas_newsitem',
-			'tapas_staticpage',
+			//'tapas_newsitem',
+			//'tapas_staticpage',
 		),
 		array(
 			'create',
