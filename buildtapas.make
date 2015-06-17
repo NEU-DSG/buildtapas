@@ -55,7 +55,7 @@ projects[diff][subdir] = develop
 projects[tapas-modules][type] = module
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
-projects[tapas-modules][download][branch] = develop
+projects[tapas-modules][download][branch] = feature/handle_tapasrecord_metadata
 projects[tapas-modules][download[branch][working-copy] = TRUE
 
 projects[tapas-themes][type] = theme
