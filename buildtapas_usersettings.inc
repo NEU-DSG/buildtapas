@@ -1,5 +1,19 @@
 <?php
+/**
+ * @file
+ *
+ * Contains portions of the install related to user permissions.
+ */
 
+
+/**
+ * Check for unrecognized permissions.
+ *
+ * Drupal will blow up if you try to pass it unrecognized
+ * permission strings in certain functions, so this function
+ * will allow us to "fail fast" and with a clear error message,
+ * rather than slowly with a cryptic one.
+ */
 function buildtapas_check_permissions_array($perms) {
 
 	$all_perms = array_keys(user_permission_get_modules());
@@ -9,6 +23,7 @@ function buildtapas_check_permissions_array($perms) {
 		echo "
 		################################
 		found unrecognized permissions:
+		--------------------------------
 		";
 
 		foreach ($err_check as $err) {
@@ -21,8 +36,6 @@ function buildtapas_check_permissions_array($perms) {
 		";
 		exit(1);
 	}
-
-	return $perms;
 }
 
 
@@ -32,16 +45,9 @@ function buildtapas_check_permissions_array($perms) {
  */
 function buildtapas_do_user_settings() {
 
-	echo "DEBUGGING: beginning buildtapas_do_user_settings()
-	";
-
 	user_role_grant_permissions(
 		DRUPAL_ANONYMOUS_RID,
 		_buildtapas_get_anonymous_user_permissions());
-
-
-	echo "DEBUGGING: finished anonymous grant permissions
-	";
 
   variable_set('user_pictures', '1');
   variable_set('user_picture_dimensions', '1024x1024');
@@ -53,10 +59,6 @@ function buildtapas_do_user_settings() {
 		DRUPAL_AUTHENTICATED_RID, 
 		_buildtapas_get_registered_user_permissions());
 
-	echo "DEBUGGING: finished authenticated grant permissions
-	";
-
-/*
 	_buildtapas_create_role(
 		'paidmember',
 		_tapas_get_paidmember_user_permissions(),
@@ -66,21 +68,14 @@ function buildtapas_do_user_settings() {
 		'siteeditor',
 		_tbuildapas_get_siteeditor_user_permissions(),
 		4);
-*/
 
 	$admin_permissions = array_keys(module_invoke_all('permission'));
-
-	echo "DEBUGGING: Set admin_permissions array
-	";
 
 	$admin_role = _buildtapas_create_role('administrator', $admin_permissions,	 5);
   variable_set('user_admin_role', $admin_role->rid);
   db_insert('users_roles')
 		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
-
-	echo "DEBUGGING: completed do_user_settings routine.
-	";
 
 }
 
@@ -150,7 +145,7 @@ function _buildtapas_get_registered_user_permissions() {
 		'view any main profile', #profile2 module
 		'search content',
 		'use advanced search',
-		'view user profiles',
+		'access user profiles',
 		'cancel account',
 	);
 
@@ -166,15 +161,10 @@ function _buildtapas_get_registered_user_permissions() {
 		)
 	);
 
-	echo "DEBUGGING: base is " . var_dump($base) . " ####";
-	echo "DEBUGGING: content is " .var_dump($content_perms) . " ####";
-
 	$complete = array_merge(
 		_buildtapas_get_anonymous_user_permissions(),
 		$base,
 		$content_perms);
-
-	echo "DEBUGGING: complete is " . var_dump($complete) . " ####";
 
 	buildtapas_check_permissions_array($complete);
 	return $complete;
