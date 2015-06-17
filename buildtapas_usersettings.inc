@@ -61,12 +61,12 @@ function buildtapas_do_user_settings() {
 
 	_buildtapas_create_role(
 		'paidmember',
-		_tapas_get_paidmember_user_permissions(),
+		_buildtapas_get_paidmember_user_permissions(),
 		3);
 	
 	_buildtapas_create_role(
 		'siteeditor',
-		_tbuildapas_get_siteeditor_user_permissions(),
+		_buildtapas_get_siteeditor_user_permissions(),
 		4);
 
 	$admin_permissions = array_keys(module_invoke_all('permission'));
