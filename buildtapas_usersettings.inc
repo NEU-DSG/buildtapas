@@ -239,7 +239,7 @@ function _buildtapas_get_siteeditor_user_permissions() {
 		'edit any main profile', #profile2 module
 		'administer sharethis', #sharethis module
 		'access site in maintenance mode',
-		'block ip addresses',
+		'block IP addresses',
 		'access all views'
 	);
 
