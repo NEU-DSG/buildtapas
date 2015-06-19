@@ -22,10 +22,10 @@ echo "=============================================="
 echo "Creating stub.make file..."
 echo "=============================================="
 echo "api = 2" > stub.make;
-echo "core = 7.37" >> stub.make;
+echo "core = 7.38" >> stub.make;
 echo "" >> stub.make;
 echo "projects[drupal][type] = core" >> stub.make;
-echo "projects[drupal][version] = 7.37" >> stub.make;
+echo "projects[drupal][version] = 7.38" >> stub.make;
 #echo "" >> stub.make;
 #echo "; See https://www.drupal.org/node/1432374 for path info. legacy" >> stub.make;
 #echo "; check causes problems with custom profiles." >> stub.make;
