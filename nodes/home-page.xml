@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<node_export created="Thu, 11 Jun 2015 12:15:54 +0000">
+<node_export created="Fri, 19 Jun 2015 11:41:56 +0000">
   <node>
-    <vid>1</vid>
+    <vid>185</vid>
     <uid>1</uid>
     <title>Home</title>
     <log></log>
@@ -10,57 +10,68 @@
     <promote>1</promote>
     <sticky>0</sticky>
     <vuuid>79d60111-9e59-478c-8f45-b1677e572fcb</vuuid>
-    <nid>1</nid>
+    <nid>185</nid>
     <type>tapas_staticpage</type>
     <language>und</language>
-    <created>1434024468</created>
-    <changed>1434024837</changed>
+    <created>1434140703</created>
+    <changed>1434714023</changed>
     <tnid>0</tnid>
     <translate>0</translate>
     <uuid>922d1d39-6137-4721-bd5a-d72e2fa51dc9</uuid>
-    <revision_timestamp>1434024837</revision_timestamp>
+    <revision_timestamp>1434714023</revision_timestamp>
     <revision_uid>1</revision_uid>
     <body>
       <und _numeric_keys="1">
         <n0>
-          <value>    &lt;section class=&quot;header&quot;&gt;
+          <value>&lt;section class=&quot;header&quot;&gt;
       &lt;div class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-lg-12&quot;&gt;
+          &lt;div class=&quot;col-lg-8&quot;&gt;
             &lt;h1&gt;Store, Visualize, and Share Your TEI&lt;h1&gt;
               &lt;br/&gt;
             &lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-info&quot;&gt;Sign Up&lt;/a&gt;
             &lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-default&quot;&gt;Learn More&lt;/a&gt;
             &lt;br/&gt;
-          &lt;/div&gt;&lt;!-- /.col-lg-4 --&gt;
+          &lt;/div&gt;&lt;!-- /.col-lg-8 --&gt;
+          &lt;div class=&quot;col-lg-4&quot;&gt;
+                 &lt;p&gt;TAPAS is a digital project hosted by Northeastern University’s Digital Scholarship Group and Digital Repository Service. &lt;/p&gt;&lt;p&gt;We are also generously funded by the Text Encoding Initiative Consortium (TEI-C), the Institute of Museum and Library Sciences (IMLS), and the National Endowment for the Humanities (NEH).&lt;/p&gt;
+          &lt;/div&gt;
         &lt;/div&gt;&lt;!-- /.row --&gt;
       &lt;/div&gt;
     &lt;/section&gt;
 &lt;section class=&quot;pillars&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
       &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
           &lt;div class=&quot;center-block text-center&quot;&gt;
-            &lt;h2&gt;Store&lt;/h2&gt;
+            &lt;h2&gt;Archive&lt;/h2&gt;
             &lt;i class=&quot;fa fa-inbox fa-5x&quot;&gt;&lt;/i&gt;
-            &lt;p class=&quot;text-left&quot;&gt;Open access to a digital repository designed for secure, long-term storage of TEI data, hosted and curated by Northeastern University&lt;/p&gt;
-            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;text-left&quot;&gt;An open access digital repository service for secure, long-term storage of TEI data.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Discover&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-search fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;A research platform for scholars of the TEI and the humanities.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
           &lt;div class=&quot;center-block text-center&quot;&gt;
             &lt;h2&gt;Visualize&lt;/h2&gt;
             &lt;i class=&quot;fa fa-bar-chart fa-5x&quot;&gt;&lt;/i&gt;
-            &lt;p class=&quot;text-left&quot;&gt;Experiment with and output your TEI in a variety of forms, such as a website, data visualization, or print copy&lt;/p&gt;
-            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Explore &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;text-left&quot;&gt;An experimentation space for visualizing, analyzing, and curating TEI project data.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
           &lt;div class=&quot;center-block text-center&quot;&gt;
             &lt;h2&gt;Share&lt;/h2&gt;
             &lt;i class=&quot;fa fa-share-alt fa-5x&quot;&gt;&lt;/i&gt;
-            &lt;p class=&quot;text-left&quot;&gt;Invite collaborators and contributors to your TEI projects and enter into a community of practitioners who share and support the growth and development of TEI&lt;/p&gt;
-            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;text-left&quot;&gt;A community of TEI practitioners who support collaborative research and development of the TEI.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More &amp;raquo;&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -175,199 +186,53 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/section&gt;
-
-  &lt;section class=&quot;testimonials&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h2&gt;Testimonials&lt;/h2&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
-          &lt;/blockquote&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
-          &lt;/blockquote&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
-          &lt;/blockquote&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;hr&gt;
-
-  &lt;section class=&quot;membership&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h2&gt;Membership&lt;/h2&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-          &lt;table class=&quot;table table-bordered&quot;&gt;
-            &lt;tr&gt;
-              &lt;th&gt;&lt;/th&gt;&lt;th&gt;Free Tapas Membership&lt;/th&gt;&lt;th&gt;Tapas and TEI Membership&lt;/th&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Cost&lt;/td&gt;
-              &lt;td&gt;Free&lt;/td&gt;
-              &lt;td&gt;Paid&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Contribute to Projects&lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Create Projects&lt;/td&gt;
-              &lt;td&gt;
-
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Contribute to Collections&lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Create Collections&lt;/td&gt;
-              &lt;td&gt;
-
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Be Invited to Collaborate on existing projects and collections&lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td&gt;Invite others to Collaborate on existing projects and collections&lt;/td&gt;
-              &lt;td&gt;
-
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class=&quot;sponsors&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h3&gt;Generously Funded By&lt;/h3&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/tei_white.png&quot; class=&quot;logo&quot;&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/imls_white.png&quot; class=&quot;logo&quot;&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/neh_white.png&quot; class=&quot;logo neh&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;</value>
+</value>
           <summary></summary>
           <format>full_html</format>
-          <safe_value>    &lt;section class=&quot;header&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+          <safe_value>&lt;section class=&quot;header&quot;&gt;&lt;div class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-lg-12&quot;&gt;
+          &lt;div class=&quot;col-lg-8&quot;&gt;
             &lt;h1&gt;Store, Visualize, and Share Your TEI&lt;h1&gt;
               &lt;br /&gt;&lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-info&quot;&gt;Sign Up&lt;/a&gt;
             &lt;a href=&quot;&quot; class=&quot;btn btn-lg btn-default&quot;&gt;Learn More&lt;/a&gt;
-            &lt;br /&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/div&gt;&lt;!-- /.col-lg-4 --&gt;
+            &lt;br /&gt;&lt;/h1&gt;&lt;/h1&gt;&lt;/div&gt;&lt;!-- /.col-lg-8 --&gt;
+          &lt;div class=&quot;col-lg-4&quot;&gt;
+                 &lt;p&gt;TAPAS is a digital project hosted by Northeastern University’s Digital Scholarship Group and Digital Repository Service. &lt;/p&gt;&lt;p&gt;We are also generously funded by the Text Encoding Initiative Consortium (TEI-C), the Institute of Museum and Library Sciences (IMLS), and the National Endowment for the Humanities (NEH).&lt;/p&gt;
+          &lt;/div&gt;
         &lt;/div&gt;&lt;!-- /.row --&gt;
       &lt;/div&gt;
     &lt;/section&gt;&lt;section class=&quot;pillars&quot;&gt;&lt;div class=&quot;container&quot;&gt;
       &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
           &lt;div class=&quot;center-block text-center&quot;&gt;
-            &lt;h2&gt;Store&lt;/h2&gt;
+            &lt;h2&gt;Archive&lt;/h2&gt;
             &lt;i class=&quot;fa fa-inbox fa-5x&quot;&gt;&lt;/i&gt;
-            &lt;p class=&quot;text-left&quot;&gt;Open access to a digital repository designed for secure, long-term storage of TEI data, hosted and curated by Northeastern University&lt;/p&gt;
-            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More »&lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;text-left&quot;&gt;An open access digital repository service for secure, long-term storage of TEI data.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More »&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
+          &lt;div class=&quot;center-block text-center&quot;&gt;
+            &lt;h2&gt;Discover&lt;/h2&gt;
+            &lt;i class=&quot;fa fa-search fa-5x&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;text-left&quot;&gt;A research platform for scholars of the TEI and the humanities.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More »&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
           &lt;div class=&quot;center-block text-center&quot;&gt;
             &lt;h2&gt;Visualize&lt;/h2&gt;
             &lt;i class=&quot;fa fa-bar-chart fa-5x&quot;&gt;&lt;/i&gt;
-            &lt;p class=&quot;text-left&quot;&gt;Experiment with and output your TEI in a variety of forms, such as a website, data visualization, or print copy&lt;/p&gt;
-            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Explore »&lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;text-left&quot;&gt;An experimentation space for visualizing, analyzing, and curating TEI project data.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More »&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;col-md-3&quot;&gt;
           &lt;div class=&quot;center-block text-center&quot;&gt;
             &lt;h2&gt;Share&lt;/h2&gt;
             &lt;i class=&quot;fa fa-share-alt fa-5x&quot;&gt;&lt;/i&gt;
-            &lt;p class=&quot;text-left&quot;&gt;Invite collaborators and contributors to your TEI projects and enter into a community of practitioners who share and support the growth and development of TEI&lt;/p&gt;
-            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn More »&lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;text-left&quot;&gt;A community of TEI practitioners who support collaborative research and development of the TEI.&lt;/p&gt;
+            &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;More »&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -477,129 +342,6 @@
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/section&gt;&lt;section class=&quot;testimonials&quot;&gt;&lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h2&gt;Testimonials&lt;/h2&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-sm-4 testimonial&quot;&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-            &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;&lt;hr /&gt;&lt;section class=&quot;membership&quot;&gt;&lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h2&gt;Membership&lt;/h2&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-6 col-sm-offset-3&quot;&gt;
-          &lt;table class=&quot;table table-bordered&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Free Tapas Membership&lt;/th&gt;&lt;th&gt;Tapas and TEI Membership&lt;/th&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cost&lt;/td&gt;
-              &lt;td&gt;Free&lt;/td&gt;
-              &lt;td&gt;Paid&lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contribute to Projects&lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Create Projects&lt;/td&gt;
-              &lt;td&gt;
-
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contribute to Collections&lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Create Collections&lt;/td&gt;
-              &lt;td&gt;
-
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Be Invited to Collaborate on existing projects and collections&lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Invite others to Collaborate on existing projects and collections&lt;/td&gt;
-              &lt;td&gt;
-
-              &lt;/td&gt;
-              &lt;td&gt;
-                &lt;span class=&quot;fa-stack fa-lg&quot;&gt;
-                  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
-                  &lt;i class=&quot;fa fa-check fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
-                &lt;/span&gt;
-              &lt;/td&gt;
-            &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;&lt;section class=&quot;sponsors&quot;&gt;&lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h3&gt;Generously Funded By&lt;/h3&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/tei_white.png&quot; class=&quot;logo&quot; /&gt;&lt;/div&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/imls_white.png&quot; class=&quot;logo&quot; /&gt;&lt;/div&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-          &lt;img src=&quot;/profiles/buildtapas/themes/tapas-themes/tapas_redesign/assets/images/neh_white.png&quot; class=&quot;logo neh&quot; /&gt;&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
   &lt;/section&gt;</safe_value>
           <safe_summary></safe_summary>
         </n0>
@@ -661,16 +403,16 @@
       </last_activity>
     </rdf_mapping>
     <cid>0</cid>
-    <last_comment_timestamp>1434024468</last_comment_timestamp>
+    <last_comment_timestamp>1434140703</last_comment_timestamp>
     <last_comment_name type="NULL"></last_comment_name>
     <last_comment_uid>1</last_comment_uid>
     <comment_count>0</comment_count>
     <name>admin</name>
     <picture>0</picture>
-    <data>b:0;</data>
+    <data>a:1:{s:7:&quot;contact&quot;;i:1;}</data>
     <path>
       <pid>1</pid>
-      <source>node/1</source>
+      <source>node/185</source>
       <alias>home</alias>
       <language>und</language>
     </path>
