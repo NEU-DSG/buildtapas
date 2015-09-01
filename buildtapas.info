@@ -105,6 +105,7 @@ dependencies[] = diff
 ; Custom
 dependencies[] = tapasrecord
 dependencies[] = tapascollection
+dependencies[] = tapashydra
 dependencies[] = tapas_feature_base_og                        
 dependencies[] = tapas_feature_base_tinythumb
 dependencies[] = tapas_feature_content_tapasrecord_as_content

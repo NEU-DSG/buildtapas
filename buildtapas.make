@@ -31,6 +31,7 @@ projects[admin_menu][subdir] = contrib
 projects[node_export][subdir]  = migration
 projects[uuid][subdir] = migration
 projects[user_import][subdir] = migration
+projects[backup_migrate][subdir] = migration
 
 ; Community
 projects[sharethis][subdir] = contrib
