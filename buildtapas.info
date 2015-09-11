@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.38
+core = 7.39
 exclusive = true
 
 ; -----------------------------------------------------------------------------
@@ -21,7 +21,6 @@ dependencies[] = color
 dependencies[] = comment
 dependencies[] = contact
 dependencies[] = contextual
-;dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field
 dependencies[] = field_ui
@@ -38,11 +37,9 @@ dependencies[] = options
 dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
-;dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
-;dependencies[] = toolbar
 dependencies[] = update
 dependencies[] = user
 
@@ -103,23 +100,12 @@ dependencies[] = advanced_help
 dependencies[] = diff
 
 ; Custom
-dependencies[] = tapasrecord
-dependencies[] = tapascollection
-dependencies[] = tapashydra
-dependencies[] = tapas_feature_base_og                        
+dependencies[] = tapascontent
 dependencies[] = tapas_feature_base_tinythumb
-dependencies[] = tapas_feature_content_tapasrecord_as_content
 dependencies[] = tapas_feature_content_profile
 dependencies[] = tapas_feature_menu_main
 dependencies[] = tapas_feature_taxonomy_institution
-dependencies[] = tapas_feature_view_group_members
-dependencies[] = tapas_feature_tapascollection
 dependencies[] = tapas_feature_menu_footer
-dependencies[] = tapas_feature_block_community
 dependencies[] = tapas_feature_menu_user
-dependencies[] = tapas_feature_block_footer_content           
-dependencies[] = tapas_feature_content_newsitem               
-dependencies[] = tapas_feature_content_page
-dependencies[] = tapas_feature_view_community
 
 
