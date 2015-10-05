@@ -1,6 +1,7 @@
 <?php
 /**
  * @file
+ * buildtapas.install
  *
  * Installation actions for buildtapas profile
  */
@@ -77,20 +78,6 @@ function _buildtapas_rdf() {
       'bundle' => 'page',
       'mapping' => array(
         'rdftype' => array('foaf:Document'),
-      ),
-    ),
-    array(
-      'type' => 'node',
-      'bundle' => 'article',
-      'mapping' => array(
-        'field_image' => array(
-          'predicates' => array('og:image', 'rdfs:seeAlso'),
-          'type' => 'rel',
-        ),
-        'field_tags' => array(
-          'predicates' => array('dc:subject'),
-          'type' => 'rel',
-        ),
       ),
     ),
   );
