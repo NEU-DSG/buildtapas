@@ -43,7 +43,7 @@ projects[homebox][subdir] = contrib
 projects[token][subdir] = contrib
 projects[hierarchical_select][subdir] = contrib
 projects[context][subdir] = contrib
-projects[context][subdir] = contrib
+projects[hook_post_action][subdir] = contrib
 
 ; Dev modules
 projects[devel][subdir] = develop
@@ -57,7 +57,7 @@ projects[diff][subdir] = develop
 projects[tapas-modules][type] = module
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
-projects[tapas-modules][download][branch] = feature/develop
+projects[tapas-modules][download][branch] = develop
 projects[tapas-modules][download[branch][working-copy] = TRUE
 
 projects[tapas-themes][type] = theme
