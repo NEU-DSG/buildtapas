@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.38
+core = 7.39
 exclusive = true
 
 ; -----------------------------------------------------------------------------
@@ -21,7 +21,6 @@ dependencies[] = color
 dependencies[] = comment
 dependencies[] = contact
 dependencies[] = contextual
-;dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field
 dependencies[] = field_ui
@@ -38,11 +37,9 @@ dependencies[] = options
 dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
-;dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
-;dependencies[] = toolbar
 dependencies[] = update
 dependencies[] = user
 
@@ -92,8 +89,9 @@ dependencies[] = features
 dependencies[] = homebox
 ;dependencies[] = homebox_og
 dependencies[] = token
-dependencies[] = hierarchical_select
+;dependencies[] = hierarchical_select
 dependencies[] = context
+dependencies[] = hook_post_action
 
 ; Development
 dependencies[] = devel
@@ -103,23 +101,31 @@ dependencies[] = advanced_help
 dependencies[] = diff
 
 ; Custom
-dependencies[] = tapasrecord
-dependencies[] = tapascollection
-dependencies[] = tapashydra
-dependencies[] = tapas_feature_base_og                        
-dependencies[] = tapas_feature_base_tinythumb
-dependencies[] = tapas_feature_content_tapasrecord_as_content
-dependencies[] = tapas_feature_content_profile
-dependencies[] = tapas_feature_menu_main
-dependencies[] = tapas_feature_taxonomy_institution
-dependencies[] = tapas_feature_view_group_members
-dependencies[] = tapas_feature_tapascollection
-dependencies[] = tapas_feature_menu_footer
-dependencies[] = tapas_feature_block_community
-dependencies[] = tapas_feature_menu_user
-dependencies[] = tapas_feature_block_footer_content           
-dependencies[] = tapas_feature_content_newsitem               
-dependencies[] = tapas_feature_content_page
-dependencies[] = tapas_feature_view_community
+dependencies[] = tapascontent
 
+; Features
+dependencies[] = tapas_feature_base_og
+dependencies[] = tapas_feature_base_tinythumb
+dependencies[] = tapas_feature_block_community
+dependencies[] = tapas_feature_block_footer_content
+dependencies[] = tapas_feature_block_homepage
+dependencies[] = tapas_feature_block_learn
+dependencies[] = tapas_feature_context_all
+dependencies[] = tapas_feature_context_commons
+dependencies[] = tapas_feature_context_discover
+dependencies[] = tapas_feature_content_newsitem
+dependencies[] = tapas_feature_content_page
+dependencies[] = tapas_feature_content_profile 
+dependencies[] = tapas_feature_context_home
+dependencies[] = tapas_feature_homebox_my_tapas
+dependencies[] = tapas_feature_menu_footer
+dependencies[] = tapas_feature_menu_main
+dependencies[] = tapas_feature_menu_user
+dependencies[] = tapas_feature_og_settings
+dependencies[] = tapas_feature_taxonomy_institution
+dependencies[] = tapas_feature_view_collections_in_projects
+dependencies[] = tapas_feature_view_community
+dependencies[] = tapas_feature_view_featured_galleries
+dependencies[] = tapas_feature_view_my_tapas
+dependencies[] = tapas_feature_view_news
 

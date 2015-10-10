@@ -3,7 +3,19 @@
  * @file
  *
  * Contains portions of the install related to user permissions.
+ *
+ * Note that permissions specific to the tapas content types (Project,
+ * Collection, and TEI Record) are set in the tapas_modules/tapascontent
+ * module, rather than here.
  */
+
+//@TODO: Set these constants up in a single, accessible place rather than...
+// having to declare them separately here and in the tapascontent module.
+
+/** Name of paid-member role. Must match any modules that access it. */
+define ('TAPAS_PAIDMEMBER_ROLE', 'paidmember');
+/** Name of admin role. Must match any modules that access it. */
+define ('TAPAS_ADMIN_ROLE', 'administrator');
 
 
 /**
@@ -57,21 +69,18 @@ function buildtapas_do_user_settings() {
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 	user_role_grant_permissions(
 		DRUPAL_AUTHENTICATED_RID, 
-		_buildtapas_get_registered_user_permissions());
+		_buildtapas_get_registered_user_permissions()
+	);
 
 	_buildtapas_create_role(
-		'paidmember',
+		TAPAS_PAIDMEMBER_ROLE,
 		_buildtapas_get_paidmember_user_permissions(),
-		3);
+		3
+	);
 	
-	_buildtapas_create_role(
-		'siteeditor',
-		_buildtapas_get_siteeditor_user_permissions(),
-		4);
-
 	$admin_permissions = array_keys(module_invoke_all('permission'));
 
-	$admin_role = _buildtapas_create_role('administrator', $admin_permissions,	 5);
+	$admin_role = _buildtapas_create_role(TAPAS_ADMIN_ROLE, $admin_permissions,	 5);
   variable_set('user_admin_role', $admin_role->rid);
   db_insert('users_roles')
 		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
@@ -133,7 +142,7 @@ function _buildtapas_get_anonymous_user_permissions() {
  */
 function _buildtapas_get_registered_user_permissions() {
 
-	$base =  array(
+	$registered_perms =  array(
 		'post comments',
 		'skip comment approval',
 		'access user contact forms',
@@ -147,24 +156,14 @@ function _buildtapas_get_registered_user_permissions() {
 		'use advanced search',
 		'access user profiles',
 		'cancel account',
-	);
-
-	$content_perms = _buildtapas_content_permissions_loop(
-		array(
-			'tapasrecordnode',
-			'forum'
-		),
-		array(
-			'create',
-			'edit own',
-			'delete own'
-		)
+		'create forum content',
+		'edit own forum content',
+		'delete own forum content',
 	);
 
 	$complete = array_merge(
 		_buildtapas_get_anonymous_user_permissions(),
-		$base,
-		$content_perms);
+		$registered_perms);
 
 	buildtapas_check_permissions_array($complete);
 	return $complete;
@@ -176,40 +175,18 @@ function _buildtapas_get_registered_user_permissions() {
  */
 function _buildtapas_get_paidmember_user_permissions() {
 
-	$base = array(
+	// The majority of paid user perks relate to permissions
+	// handled in the tapas_modules/tapascontent module, rather than here.
+
+	$paid_perms = array(
 		'edit own comments',
 		'use text format full_html',
 		'change own username',
 	);
 
-	$tapas_content_perms = _buildtapas_content_permissions_loop(
-		array(
-			'tapascollection_project',
-			'tapascollection_collection',
-			'tapasrecordnode',
-			'forum'),
-		array(
-			'create',
-			'edit own',
-			'delete own'
-		)
-	);
-
-	$general_content_perms = _buildtapas_content_permissions_loop(
-		array(
-			'tapasrecordnode'
-		),
-		array(
-			'edit any',
-			'delete any'
-		)
-	);
-
 	$complete = array_merge(
 		_buildtapas_get_registered_user_permissions(),
-		$base,
-		$tapas_content_perms,
-		$general_content_perms);
+		$paid_perms);
 
 	buildtapas_check_permissions_array($complete);
 
@@ -217,54 +194,3 @@ function _buildtapas_get_paidmember_user_permissions() {
 
 }
 
-/**
- * Return array of permissions for the site editor(s)
- */
-
-function _buildtapas_get_siteeditor_user_permissions() {
-
-	$base = array(
-		'edit site follow links', #follow module
-		'change follow link titles', #follow module
-		'administer forums',
-		'bypass node access',
-		'access content overview',
-		'view revisions',
-		'revert revisions',
-		'delete revisions',
-		'administer url aliases',
-		'create url aliases',
-		'administer profile types', #profile2 module
-		'administer profiles', #profile2 module
-		'edit any main profile', #profile2 module
-		'administer sharethis', #sharethis module
-		'access site in maintenance mode',
-		'block IP addresses',
-		'access all views'
-	);
-
-	$content_perms = _buildtapas_content_permissions_loop(
-		array(
-			'tapascollection_project',
-			'tapascollection_collection',
-			'tapasrecordnode',
-			'forum',
-			//'tapas_newsitem',
-			//'tapas_staticpage',
-		),
-		array(
-			'create',
-			'edit own',
-			'edit any',
-			'delete own',
-			'delete any')
-	);
-
-	$complete = array_merge(
-		_buildtapas_get_paidmember_user_permissions(),
-		$base,
-		$content_perms);
-
-	buildtapas_check_permissions_array($complete);
-	return $complete;
-}

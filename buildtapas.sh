@@ -22,15 +22,12 @@ echo "=============================================="
 echo "Creating stub.make file..."
 echo "=============================================="
 echo "api = 2" > stub.make;
-echo "core = 7.38" >> stub.make;
+echo "core = 7.39" >> stub.make;
 echo "" >> stub.make;
 echo "projects[drupal][type] = core" >> stub.make;
-echo "projects[drupal][version] = 7.38" >> stub.make;
-#echo "" >> stub.make;
-#echo "; See https://www.drupal.org/node/1432374 for path info. legacy" >> stub.make;
-#echo "; check causes problems with custom profiles." >> stub.make;
-echo "projects[drupal][patch][] = https://www.drupal.org/files/1093420-22.patch" >> stub.make;
-echo "projects[drupal][patch][] = https://www.drupal.org/files/issues/comment-node-type-delete-1565892-3.patch" >> stub.make;
+echo "projects[drupal][version] = 7.39" >> stub.make;
+#echo "projects[drupal][patch][] = https://www.drupal.org/files/1093420-22.patch" >> stub.make;
+#echo "projects[drupal][patch][] = https://www.drupal.org/files/issues/comment-node-type-delete-1565892-3.patch" >> stub.make;
 echo "" >> stub.make;
 # This patch is to prevent user_role_grant_permissions from crashing
 echo "projects[drupal][patch[] = https://www.drupal.org/files/user_role_grant_permission_fails_when_module_is_missing-1249952-2.patch" >> stub.make;

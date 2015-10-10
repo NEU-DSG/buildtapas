@@ -43,6 +43,7 @@ projects[homebox][subdir] = contrib
 projects[token][subdir] = contrib
 projects[hierarchical_select][subdir] = contrib
 projects[context][subdir] = contrib
+projects[hook_post_action][subdir] = contrib
 
 ; Dev modules
 projects[devel][subdir] = develop
