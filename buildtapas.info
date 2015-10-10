@@ -91,6 +91,7 @@ dependencies[] = homebox
 dependencies[] = token
 ;dependencies[] = hierarchical_select
 dependencies[] = context
+dependencies[] = hook_post_action
 
 ; Development
 dependencies[] = devel
