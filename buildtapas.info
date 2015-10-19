@@ -92,6 +92,8 @@ dependencies[] = token
 ;dependencies[] = hierarchical_select
 dependencies[] = context
 dependencies[] = hook_post_action
+dependencies[] = prepopulate
+dependencies[] = crumbs
 
 ; Development
 dependencies[] = devel
@@ -115,7 +117,7 @@ dependencies[] = tapas_feature_context_commons
 dependencies[] = tapas_feature_context_discover
 dependencies[] = tapas_feature_content_newsitem
 dependencies[] = tapas_feature_content_page
-dependencies[] = tapas_feature_content_profile 
+dependencies[] = tapas_feature_content_profile
 dependencies[] = tapas_feature_context_home
 dependencies[] = tapas_feature_homebox_my_tapas
 dependencies[] = tapas_feature_menu_footer
@@ -128,4 +130,3 @@ dependencies[] = tapas_feature_view_community
 dependencies[] = tapas_feature_view_featured_galleries
 dependencies[] = tapas_feature_view_my_tapas
 dependencies[] = tapas_feature_view_news
-
