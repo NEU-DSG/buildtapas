@@ -46,6 +46,10 @@ projects[hook_post_action][subdir] = contrib
 projects[prepopulate][subdir] = contrib
 projects[crumbs][subdir] = contrib
 
+; Search
+projects[apachesolr][subdir] = contrib
+projects[apachesolr_og][subdir] = contrib
+
 ; Dev modules
 projects[devel][subdir] = develop
 ;projects[checklistapi][subdir] = develop
@@ -58,7 +62,7 @@ projects[diff][subdir] = develop
 projects[tapas-modules][type] = module
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
-projects[tapas-modules][download][branch] = develop
+projects[tapas-modules][download][branch] = feature/solr_indexing
 projects[tapas-modules][download[branch][working-copy] = TRUE
 
 projects[tapas-themes][type] = theme
