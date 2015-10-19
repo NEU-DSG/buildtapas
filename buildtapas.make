@@ -8,8 +8,6 @@ projects[features_extra][subdir] = contrib
 projects[views_bootstrap][subdir] = contrib
 projects[ds][subdir] = contrib
 
-
-
 ; Contributed modules key dependencies
 projects[ctools][subdir] = contrib
 projects[views][subdir] = contrib
@@ -25,6 +23,7 @@ projects[date][subdir] = contrib
 projects[link][subdir] = contrib
 projects[addressfield][subdir] = contrib
 projects[name][subdir] = contrib
+projects[multiselect][subdir] = contrib
 
 ; Administrative
 projects[admin_menu][subdir] = contrib

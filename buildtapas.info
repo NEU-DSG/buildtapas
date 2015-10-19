@@ -66,6 +66,7 @@ dependencies[] = date
 dependencies[] = date_api
 dependencies[] = link
 dependencies[] = name
+dependencies[] = multiselect
 
 ; Administration
 dependencies[] = admin_menu
