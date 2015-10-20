@@ -108,6 +108,8 @@ dependencies[] = tapascontent
 
 ; Search
 dependencies[] = apachesolr
+dependencies[] = apachesolr_access
+dependencies[] = apachesolr_search
 dependencies[] = apachesolr_og
 
 ; Features
