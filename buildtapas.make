@@ -46,6 +46,10 @@ projects[hook_post_action][subdir] = contrib
 projects[prepopulate][subdir] = contrib
 projects[crumbs][subdir] = contrib
 
+; Search
+projects[apachesolr][subdir] = contrib
+projects[apachesolr_og][subdir] = contrib
+
 ; Dev modules
 projects[devel][subdir] = develop
 ;projects[checklistapi][subdir] = develop
