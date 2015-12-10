@@ -22,7 +22,7 @@ echo "=============================================="
 echo "Creating stub.make file..."
 echo "=============================================="
 echo "api = 2" > stub.make;
-echo "core = 7.39" >> stub.make;
+echo "core = 7.41" >> stub.make;
 echo "" >> stub.make;
 echo "projects[drupal][type] = core" >> stub.make;
 echo "projects[drupal][version] = 7.39" >> stub.make;
@@ -36,7 +36,6 @@ echo "projects[buildtapas][type] = profile" >> stub.make;
 echo "projects[buildtapas][download][type] = git" >> stub.make;
 echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
 echo "projects[buildtapas][download][branch] = develop" >> stub.make
-echo "projects[buildtapas][download][working-copy] = TRUE" >> stub.make
 
 ## III. Run the stub.make
 echo "=============================================="
@@ -79,6 +78,7 @@ echo "=============================================="
 # Inelegant solution since it bypasses localization, but it does the job for now.
 drush -y vset site_name "TAPAS Project"
 drush -y vset theme_default "tapas_redesign"
+drush -y vset admin_theme "tapas_redesign"
 drush -y vset clean_url TRUE
 drush -y vset user_pictures TRUE
 drush -y vset user_picture_dimentions "200x200"

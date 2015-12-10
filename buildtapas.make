@@ -1,5 +1,5 @@
 api = 2
-core = 7.39
+core = 7.41
 
 
 projects[follow][subdir] = community
@@ -57,12 +57,13 @@ projects[rules][subdir] = contrib
 projects[rules_list_conditions][subdir] = contrib
 projects[token][subdir] = contrib
 
-projects[tapas-modules][download[branch][working-copy] = TRUE
+projects[tapas-modules][download][working-copy] = TRUE
 projects[tapas-modules][download][branch] = feature/tapasrecord
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
 projects[tapas-modules][type] = module
 
+projects[tapas-themes][download][working-copy] = TRUE
 projects[tapas-themes][download][branch] = develop
 projects[tapas-themes][download][type] = git
 projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-themes

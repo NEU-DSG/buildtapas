@@ -6,7 +6,6 @@
  * Installation actions for buildtapas profile
  */
 
-include_once 'buildtapas_usersettings.inc';
 /**
  * Implements hook_install().
  *
@@ -19,14 +18,15 @@ function buildtapas_install() {
 
 	buildtapas_do_user_settings();
 
-	// Enable the admin theme.
+	// Enable the theme.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'seven')
+    ->condition('name', 'tapas_redesign')
     ->execute();
-  variable_set('admin_theme', 'seven');
-  variable_set('node_admin_theme', '1');
+	
+	variable_set('theme_default', 'tapas_redesign');
+  variable_set('admin_theme', 'tapas_redesign');
 }
 
 /**
