@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.39
+core = 7.41
 exclusive = true
 
 ; -----------------------------------------------------------------------------
@@ -68,7 +68,6 @@ dependencies[] = ds_ui
 dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = entityreference
-dependencies[] = experimental
 dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = field_group
@@ -76,7 +75,6 @@ dependencies[] = field_sql_storage
 dependencies[] = follow
 dependencies[] = homebox
 dependencies[] = honeypot
-dependencies[] = importtaxonomies
 dependencies[] = jquery_update
 dependencies[] = link
 dependencies[] = logintoboggan
@@ -95,7 +93,6 @@ dependencies[] = page_manager
 dependencies[] = pathauto
 dependencies[] = prepopulate
 dependencies[] = profile2
-dependencies[] = quicktabs
 dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = rules_list_conditions
@@ -112,8 +109,11 @@ dependencies[] = views_rules
 dependencies[] = views_ui
 
 
-;custom
+;custom modules
 dependencies[] = hook_post_action
+dependencies[] = tapascontent
+
+; custom features
 dependencies[] = tapas_feature_base_og
 dependencies[] = tapas_feature_base_tinythumb
 dependencies[] = tapas_feature_block_community
@@ -147,5 +147,4 @@ dependencies[] = tapas_feature_view_news
 dependencies[] = tapas_feature_view_records_in_collection
 dependencies[] = tapas_features_context_all_pages_nav
 dependencies[] = tapas_field_institution
-dependencies[] = tapascontent
 
