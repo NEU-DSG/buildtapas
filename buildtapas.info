@@ -75,7 +75,6 @@ dependencies[] = field_sql_storage
 dependencies[] = follow
 dependencies[] = homebox
 dependencies[] = honeypot
-dependencies[] = importtaxonomies
 dependencies[] = jquery_update
 dependencies[] = link
 dependencies[] = logintoboggan
