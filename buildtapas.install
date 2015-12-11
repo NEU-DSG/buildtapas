@@ -6,6 +6,8 @@
  * Installation actions for buildtapas profile
  */
 
+include_once 'buildtapas_usersettings.inc';
+
 /**
  * Implements hook_install().
  *
