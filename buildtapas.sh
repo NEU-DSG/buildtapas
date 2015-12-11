@@ -1,4 +1,3 @@
-#!/bin/bash
 
 ## I. Usage statement
 if [ "$5" == "" ]
@@ -25,7 +24,7 @@ echo "api = 2" > stub.make;
 echo "core = 7.41" >> stub.make;
 echo "" >> stub.make;
 echo "projects[drupal][type] = core" >> stub.make;
-echo "projects[drupal][version] = 7.39" >> stub.make;
+echo "projects[drupal][version] = 7.41" >> stub.make;
 #echo "projects[drupal][patch][] = https://www.drupal.org/files/1093420-22.patch" >> stub.make;
 #echo "projects[drupal][patch][] = https://www.drupal.org/files/issues/comment-node-type-delete-1565892-3.patch" >> stub.make;
 echo "" >> stub.make;
