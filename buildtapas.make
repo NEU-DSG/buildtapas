@@ -58,7 +58,7 @@ projects[rules_list_conditions][subdir] = contrib
 projects[token][subdir] = contrib
 
 projects[tapas-modules][download][working-copy] = TRUE
-projects[tapas-modules][download][branch] = feature/tapasrecord
+projects[tapas-modules][download][branch] = develop
 projects[tapas-modules][download][type] = git
 projects[tapas-modules][download][url] = git://github.com/NEU-DSG/tapas-modules
 projects[tapas-modules][type] = module
