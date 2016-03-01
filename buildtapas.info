@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.41
+core = 7.43
 exclusive = true
 
 ; -----------------------------------------------------------------------------

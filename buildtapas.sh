@@ -16,29 +16,23 @@ then
 	exit;
 fi
 
-## II. Create stub.make
-echo "=============================================="
-echo "Creating stub.make file..."
-echo "=============================================="
-echo "api = 2" > stub.make;
-echo "core = 7.41" >> stub.make;
-echo "" >> stub.make;
-echo "projects[drupal][type] = core" >> stub.make;
-echo "projects[drupal][version] = 7.41" >> stub.make;
-#echo "projects[drupal][patch][] = https://www.drupal.org/files/1093420-22.patch" >> stub.make;
-#echo "projects[drupal][patch][] = https://www.drupal.org/files/issues/comment-node-type-delete-1565892-3.patch" >> stub.make;
-echo "" >> stub.make;
-# This patch is to prevent user_role_grant_permissions from crashing
-echo "projects[drupal][patch[] = https://www.drupal.org/files/user_role_grant_permission_fails_when_module_is_missing-1249952-2.patch" >> stub.make;
-echo "" >> stub.make;
-echo "projects[buildtapas][type] = profile" >> stub.make;
-echo "projects[buildtapas][download][type] = git" >> stub.make;
-echo "projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas" >> stub.make;
-echo "projects[buildtapas][download][branch] = develop" >> stub.make
+## II. Verify presence of Stub.make
+
+stubfile="./stub.make"
+
+if [ -f "$stubfile"]
+then
+	echo "Stubfile found: $stubfile"
+else
+	echo "This script requires the stub.make from"
+	echo "http://www.github.com/NEU-DSG/buildtapas/stub.make"
+	echo "to be in the same directory. Please download this file."
+	exit 1
+fi
 
 ## III. Run the stub.make
 echo "=============================================="
-echo "Run drush make on the stub.make..."
+echo "Runing drush make on the stub.make..."
 echo "=============================================="
 # This will:
 #    * Download drupal
@@ -57,7 +51,7 @@ echo "command: mysql -u $1 -p$2 -e\"set @dbname='$3'; set @uname='$4'; set @pw='
 
 mysql -u $1 -p$2 -e"set @dbname='$3'; set @uname='$4'; set @pw='$5';  `cat profiles/buildtapas/buildtapas_database.sql`";
 
-## V. Run the installation script.
+## V. Run the Drupal installation script.
 echo "=============================================="
 echo "Run drush site-install on the buildtapas profile...."
 echo "=============================================="

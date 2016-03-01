@@ -8,9 +8,11 @@ If you use tapas-platter, this script will be called automagically -- skip to th
 
 ## instructions for using buildtapas
 
-  1. Download the buildtapas.sh file (yes, ONLY this file. It will clone/download/create everything else that it needs).
-  2. Place it in the location where you want to install Drupal
-  3. The five parameters are:
+	1. Download two just two files (yes, just these two. They will pull down the rest of what is needed.)
+	  * buildtapas.sh
+		* stub.make
+  1. Place them in the location where you want to install Drupal
+  1. The five parameters are:
     * Username for exisiting MySQL account with sufficient permissions to create a new database
 	  * The password for above MySQL account
 	  * The name of the new drupal database to create
@@ -27,3 +29,36 @@ The website login will be username `admin` with a randomly generated password wh
   1. Use Node Export's import feature to upload the basic page exports stored in the buildtapas subfolder.
   1. Use Node Export's import feature to upload the content (not stored in Github, because not all of it is public).
   1. Manually set 'sharethis' settings. Couldn't figure out a way to do it programatically.
+
+
+## Files
+
+<dl>
+	<dt>README.me</dt>
+	<dd> This instruction set. </dd>
+ 	<dt> buildtapas.info: </dt>
+	<dd>Gives the version of Drupal to install and the list of modules to enable.</dd>
+ 	<dt> buildtapas.install: </dt>
+	<dd>Enables the theme, creates filter formats, and adds RDF.</dd>
+ 	<dt> buildtapas.make: </dt>
+	<dd>Tells <strong>drush make</strong> what version of Drupal to download and install, 
+			and what modules & themes to download and install.</dd>
+ 	<dt> buildtapas.profile: </dt>
+	<dd>Automatically selects this profile in Drupal's instalation GUI, so that the user doesn't need to intervene/use the gui.</dd>
+ 	<dt> buildtapas.sh:</dt>
+	<dd><ol>
+		<li>Calls <strong>drush make</strong> on the <strong>stub.make</strong> file. This will cause Drupal and all 
+		   needed repositories and modules (including buildtapas) to be downloaded.</li>
+		<li>Creates the MySQL database that Drupal will use</li>
+		<li>Runs the Drupal installation script, telling it to use <strong>buildtapas</strong> as the 
+		   installation profile.</li>
+		<li>Calls a few additional cleanup Drush commands</li>
+	</ol></dd>
+ 	<dt> buildtapas_database.sql </dt>
+	<dd></dd>
+ 	<dt> buildtapas_usersettings.inc </dt>
+	<dd></dd>
+	<dt> stub.make</dt>
+	<dd> Stub makefile tells <strong>drush make</strong> to pull down this full buildtapas directory, and to install Drupal.
+	</dd>
+</dl>
