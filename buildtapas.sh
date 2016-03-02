@@ -18,7 +18,7 @@ fi
 
 ## II. Verify presence of Stub.make
 
-stubfile="./stub.make"
+$stubfile="./stub.make"
 
 if [ -f "$stubfile"]
 then

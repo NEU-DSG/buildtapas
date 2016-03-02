@@ -119,7 +119,7 @@ dependencies[] = tapascontent
 
 ; custom features
 dependencies[] = tapas_feature_base_og
-dependencies[] = tapas_featudre_base_tinythumb
+dependencies[] = tapas_feature_base_tinythumb
 dependencies[] = tapas_feature_block_community
 dependencies[] = tapas_feature_block_footer_content
 dependencies[] = tapas_feature_block_homepage
