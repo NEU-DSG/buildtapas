@@ -39,7 +39,7 @@ projects[views][subdir] = contrib
 projects[views_bootstrap][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[views_rules][subdir] = contrib
-projects[views_field_views][subdir] = contrib
+projects[views_field_view][subdir] = contrib
 
 
 ; Field Types

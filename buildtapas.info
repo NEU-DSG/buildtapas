@@ -111,6 +111,7 @@ dependencies[] = views_list_view
 dependencies[] = mailsystem
 dependencies[] = mimemail
 dependencies[] = masscontact
+dependencies[] = views_field_view
 
 
 ;custom modules
