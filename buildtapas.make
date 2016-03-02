@@ -1,49 +1,62 @@
 api = 2
-core = 7.41
+core = 7.43
 
 
-projects[follow][subdir] = community
-projects[homebox][subdir] = community
-projects[honeypot][subdir] = community
-projects[logintoboggan][subdir] = community
-projects[og][subdir] = community
-projects[og_extras][subdir] = community
-projects[profile2][subdir] = community
-projects[sharethis][subdir] = community
-
+; Dev Tools
 projects[advanced_help][subdir] = develop
-;projects[checklistapi][subdir] = develop
 projects[devel][subdir] = develop
 projects[diff][subdir] = develop
 projects[site_install_hooks][subdir] = develop
-;projects[qa_checklist][subdir] = develop
 
-projects[block_class][subdir] = display
-projects[crumbs][subdir] = display
-projects[ds][subdir] = display
-projects[jquery_update][subdir] = display
-projects[views][subdir] = display
-projects[views_bootstrap][subdir] = display
-projects[views_bulk_operations][subdir] = display
-projects[views_rules][subdir] = display
+; Migration Tools
+projects[backup_migrate][subdir] = develop
+projects[node_export][subdir]  = develop
+projects[user_import][subdir] = develop
+projects[features][subdir] = develop
+projects[features_extra][subdir] = develop
 
-projects[addressfield][subdir] = fieldtypes
-projects[date][subdir] = fieldtypes
-projects[entityreference][subdir] = fieldtypes
-projects[field_group][subdir] = fieldtypes
-projects[link][subdir] = fieldtypes
-projects[name][subdir] = fieldtypes
-projects[uuid][subdir] = fieldtypes
+; User Management
+projects[logintoboggan][subdir] = contrib
+projects[honeypot][subdir] = contrib
+projects[mailsystem][subdir] = contrib
+projects[mimemail][subdir] = contrib
+projects[mass_contact][subdir]] = contrib
 
-projects[backup_migrate][subdir] = migration
-projects[node_export][subdir]  = migration
-projects[user_import][subdir] = migration
-projects[features][subdir] = migration
-projects[features_extra][subdir] = migration
+; Community
+projects[follow][subdir] = contrib
+projects[homebox][subdir] = contrib
+projects[og][subdir] = contrib
+projects[og_extras][subdir] = contrib
+projects[profile2][subdir] = contrib
+projects[sharethis][subdir] = contrib
 
-projects[admin_menu][subdir] = contrib
-projects[apachesolr][subdir] = contrib
+; Display
+projects[block_class][subdir] = contrib
+projects[crumbs][subdir] = contrib
+projects[ds][subdir] = contrib
+projects[jquery_update][subdir] = contrib
+projects[views][subdir] = contrib
+projects[views_bootstrap][subdir] = contrib
+projects[views_bulk_operations][subdir] = contrib
+projects[views_rules][subdir] = contrib
+projects[views_field_views][subdir] = contrib
+
+
+; Field Types
+projects[addressfield][subdir] = contrib
+projects[date][subdir] = contrib
+projects[entityreference][subdir] = contrib
+projects[field_group][subdir] = contrib
+projects[link][subdir] = contrib
+projects[name][subdir] = contrib
+projects[uuid][subdir] = contrib
+
+; Indexing and Searching
 projects[apachesolr_og][subdir] = contrib
+projects[apachesolr][subdir] = contrib
+
+; Other contributed modules
+projects[admin_menu][subdir] = contrib
 projects[context][subdir] = contrib
 projects[ctools][subdir] = contrib
 projects[entity][subdir] = contrib
@@ -69,3 +82,9 @@ projects[tapas-themes][download][type] = git
 projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-themes
 projects[tapas-themes][download][working-copy] = TRUE
 projects[tapas-themes][type] = theme
+
+
+ Mail              Mail System (mailsystem)                                                 Module  Enabled        7.x-2.34
+ Mail              Mass Contact (mass_contact)                                              Module  Enabled        7.x-1.1
+ Mail              Mime Mail (mimemail)                                                     Module  Enabled        7.x-1.0-beta4
+

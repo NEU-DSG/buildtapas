@@ -107,6 +107,10 @@ dependencies[] = views_bootstrap
 dependencies[] = views_bulk_operations
 dependencies[] = views_rules
 dependencies[] = views_ui
+dependencies[] = views_list_view
+dependencies[] = mailsystem
+dependencies[] = mimemail
+dependencies[] = masscontact
 
 
 ;custom modules
@@ -115,7 +119,7 @@ dependencies[] = tapascontent
 
 ; custom features
 dependencies[] = tapas_feature_base_og
-dependencies[] = tapas_feature_base_tinythumb
+dependencies[] = tapas_featudre_base_tinythumb
 dependencies[] = tapas_feature_block_community
 dependencies[] = tapas_feature_block_footer_content
 dependencies[] = tapas_feature_block_homepage
@@ -147,4 +151,5 @@ dependencies[] = tapas_feature_view_news
 dependencies[] = tapas_feature_view_records_in_collection
 dependencies[] = tapas_features_context_all_pages_nav
 dependencies[] = tapas_field_institution
-
+dependencies[] = tapas_feature_content_shared
+dependencies[] = tapas_feature_context_project
