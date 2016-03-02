@@ -110,7 +110,7 @@ dependencies[] = views_ui
 dependencies[] = views_field_view
 dependencies[] = mailsystem
 dependencies[] = mimemail
-dependencies[] = masscontact
+dependencies[] = mass_contact
 dependencies[] = views_field_view
 
 
@@ -153,4 +153,4 @@ dependencies[] = tapas_feature_view_records_in_collection
 dependencies[] = tapas_features_context_all_pages_nav
 dependencies[] = tapas_field_institution
 dependencies[] = tapas_feature_content_shared
-dependencies[] = tapas_feature_context_project
+dependencies[] = tapas_feature_context_projects
