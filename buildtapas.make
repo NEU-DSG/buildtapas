@@ -20,7 +20,7 @@ projects[logintoboggan][subdir] = contrib
 projects[honeypot][subdir] = contrib
 projects[mailsystem][subdir] = contrib
 projects[mimemail][subdir] = contrib
-projects[mass_contact][subdir]] = contrib
+projects[mass_contact][subdir] = contrib
 
 ; Community
 projects[follow][subdir] = contrib
