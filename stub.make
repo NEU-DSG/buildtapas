@@ -10,4 +10,4 @@ projects[drupal][patch[] = https://www.drupal.org/files/user_role_grant_permissi
 projects[buildtapas][type] = profile
 projects[buildtapas][download][type] = git
 projects[buildtapas][download][url] = git://github.com/NEU-DSG/buildtapas
-projects[buildtapas][download][branch] = form_updates
+projects[buildtapas][download][branch] = feature/form_updates
