@@ -11,7 +11,6 @@ projects[site_install_hooks][subdir] = develop
 ; Migration Tools
 projects[backup_migrate][subdir] = develop
 projects[node_export][subdir]  = develop
-projects[user_import][subdir] = develop
 projects[features][subdir] = develop
 projects[features_extra][subdir] = develop
 
@@ -82,9 +81,3 @@ projects[tapas-themes][download][type] = git
 projects[tapas-themes][download][url] = git://github.com/NEU-DSG/tapas-themes
 projects[tapas-themes][download][working-copy] = TRUE
 projects[tapas-themes][type] = theme
-
-
- Mail              Mail System (mailsystem)                                                 Module  Enabled        7.x-2.34
- Mail              Mass Contact (mass_contact)                                              Module  Enabled        7.x-1.1
- Mail              Mime Mail (mimemail)                                                     Module  Enabled        7.x-1.0-beta4
-
