@@ -100,7 +100,6 @@ dependencies[] = rules_scheduler
 dependencies[] = sharethis
 dependencies[] = simpletest
 dependencies[] = token
-dependencies[] = user_import
 dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_bootstrap
