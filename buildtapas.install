@@ -154,7 +154,7 @@ function buildtapas_create_admin_role() {
 	user_role_save($admin_role);
 	
 	$admin_permissions = array_keys(module_invoke_all('permission'));
-	user_role_grant_permsissions($admin_role->rid, $admin_permissions);
+	user_role_grant_permissions($admin_role->rid, $admin_permissions);
 
 	variable_set('user_admin_role', $admin_role->rid);
 }
