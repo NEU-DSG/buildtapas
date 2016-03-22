@@ -113,9 +113,9 @@ dependencies[] = mass_contact
 dependencies[] = views_field_view
 
 
-;;custom modules
-;dependencies[] = hook_post_action
-;dependencies[] = tapascontent
+;custom modules
+dependencies[] = hook_post_action
+dependencies[] = tapascontent
 
 ;; custom features
 ;dependencies[] = tapas_feature_base_og
