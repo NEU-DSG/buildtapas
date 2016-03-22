@@ -137,7 +137,7 @@ function buildtapas_create_paidmember_role() {
 	_buildtapas_registered_user_perms();
 
 	user_role_grant_permissions(
-		TAPAS_PAIDMEMBER_ROLE, $paidmember_permissions);
+		$paidmember_role->rid, $paidmember_permissions);
 
 
 }
