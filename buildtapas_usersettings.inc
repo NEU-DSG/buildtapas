@@ -12,43 +12,8 @@
 //@TODO: Set these constants up in a single, accessible place rather than...
 // having to declare them separately here and in the tapascontent module.
 
-/** Name of paid-member role. Must match any modules that access it. */
-define ('TAPAS_PAIDMEMBER_ROLE', 'paidmember');
-/** Name of admin role. Must match any modules that access it. */
-define ('TAPAS_ADMIN_ROLE', 'administrator');
 
 
-/**
- * Check for unrecognized permissions.
- *
- * Drupal will blow up if you try to pass it unrecognized
- * permission strings in certain functions, so this function
- * will allow us to "fail fast" and with a clear error message,
- * rather than slowly with a cryptic one.
- */
-function buildtapas_check_permissions_array($perms) {
-
-	$all_perms = array_keys(user_permission_get_modules());
-	$err_check = array_diff($perms, $all_perms);
-
-	if ($err_check) {
-		echo "
-		################################
-		found unrecognized permissions:
-		--------------------------------
-		";
-
-		foreach ($err_check as $err) {
-			echo "$err
-			";
-		}
-
-		echo "
-		################################
-		";
-		exit(1);
-	}
-}
 
 
 
@@ -89,21 +54,6 @@ function buildtapas_do_user_settings() {
 }
 
 
-/**
- * Creates a role with the given name and permissions.
- */
-function _buildtapas_create_role($rolename, $permissions, $weight) {
-
-	$new_role = new stdClass();
-	$new_role->name = $rolename;
-	$new_role->weight = $weight;
-
-	user_role_save($new_role);
-	user_role_grant_permissions($new_role->rid, $permissions);
-
-	return $new_role;
-
-}
 
 /**
  * Shorthand for building permissions arrays
@@ -125,17 +75,6 @@ function _buildtapas_content_permissions_loop($types, $perms) {
 }
 
 
-/**
- * Return array of permissions for anonymous users
- */
-function _buildtapas_get_anonymous_user_permissions() {
-
-	return array(
-		'access content',
-		'access comments',
-	);
-
-}
 
 /**
  * Return array of permissions for registered users

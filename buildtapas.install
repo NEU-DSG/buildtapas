@@ -6,7 +6,10 @@
  * Installation actions for buildtapas profile
  */
 
-include_once 'buildtapas_usersettings.inc';
+/** Name of paid-member role. Must match any modules that access it. */
+define ('TAPAS_PAIDMEMBER_ROLE', 'paidmember');
+/** Name of admin role. Must match any modules that access it. */
+define ('TAPAS_ADMIN_ROLE', 'administrator');
 
 /**
  * Implements hook_install().
@@ -18,7 +21,18 @@ function buildtapas_install() {
 	_buildtapas_create_filter_formats();
 	_buildtapas_rdf();
 
-	buildtapas_do_user_settings();
+  variable_set('user_pictures', '1');
+  variable_set('user_picture_dimensions', '1024x1024');
+  variable_set('user_picture_file_size', '800');
+  variable_set('user_picture_style', 'thumbnail');
+  variable_set(
+		'user_register', 
+		USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
+
+	buildtapas_setup_anon_role();
+	buildtapas_setup_authenticated_role();
+	buildtapas_create_paidmember_role();
+	buildtapas_create_admin_role();
 
 	// Enable the theme.
   db_update('system')
@@ -30,6 +44,152 @@ function buildtapas_install() {
 	variable_set('theme_default', 'tapas_redesign');
   variable_set('admin_theme', 'tapas_redesign');
 }
+
+
+//======================================================================
+// Sanity Check before installation.
+//======================================================================
+
+/**
+ * Check for unrecognized permissions.
+ *
+ * Drupal will blow up if you try to pass it unrecognized
+ * permission strings in certain functions, so this function
+ * will allow us to "fail fast" and with a clear error message,
+ * rather than slowly with a cryptic one.
+ */
+function buildtapas_check_permissions_array($perms) {
+
+	$all_perms = array_keys(user_permission_get_modules());
+	$err_check = array_diff($perms, $all_perms);
+
+	if ($err_check) {
+		echo "
+		################################
+		found unrecognized permissions:
+		--------------------------------
+		";
+
+		foreach ($err_check as $err) {
+			echo "$err
+			";
+		}
+
+		echo "
+		################################
+		";
+		exit(1);
+	}
+}
+
+//======================================================================
+//  Set up roles.
+//======================================================================
+
+
+/**
+ * Grants permissions to the built-in DRUPAL_ANONYMOUS_RID role.
+ */
+
+function buildtapas_setup_anon_role() {
+
+	$anon_permissions = array(
+		'access content',
+		'access comments',
+	);
+
+	user_role_grant_permissions(
+		DRUPAL_ANONYMOUS_RID, $anon_permissions);
+}
+
+/**
+ * Grants permissions to the built-in DRUPAL_AUTHENTICATED_RID role.
+ */
+
+function buildtapas_setup_authenticated_role() {
+
+	$authenticated_perms = _buildtapas_registered_user_perms();
+	user_role_grant_permissions(
+		DRUPAL_AUTHENTICATED_RID, $authenticated_perms);
+
+}
+
+/**
+ * Creates Padimember role with appropriate permissions.
+ *
+ * This excludes roles related to the tapascontent module, since those
+ * content types won't yet be in existence when this runs. For tapas
+ * specific permissions, see the tapascontent.install.
+ */
+
+function buildtapas_create_paidmember_role() {
+	$paidmember_role = new stdClass();
+	$paidmember_role->name = TAPAS_PAIDMEMBER_ROLE;
+	$paidmember_role->weight = 4;
+
+	user_role_save($paidmember_role);
+
+	$paidmember_permissions = array(
+		'edit own comments',
+		'use text format full_html',
+		'change own username',
+	) +
+	_buildtapas_registered_user_perms();
+
+	user_role_grant_permissions(
+		TAPAS_PAIDMEMBER_ROLE, $paidmember_permissions);
+
+
+}
+
+/**
+ * Creates Admin role with all permissions.
+ */
+
+function buildtapas_create_admin_role() {
+
+	$admin_role = new stdClass();
+	$admin_role->name = TAPAS_ADMIN_ROLE;
+	$admin_role->weight = 5;
+	user_role_save($admin_role);
+	
+	$admin_permissions = array_keys(module_invoke_all('permission'));
+	user_role_grant_permsissions($new_role->rid, $admin_permissions);
+
+	variable_set('user_admin_role', $admin_role->rid);
+}
+
+
+/**
+ * Return array of permissions for registered users
+ */
+function _buildtapas_registered_user_perms() {
+
+	$registered_perms =  array(
+		'access content',
+		'access comments',
+		'post comments',
+		'skip comment approval',
+		'access user contact forms',
+		'use text format filtered_html',
+		'view own unpublished content',
+		'search content',
+		'use advanced search',
+		'access user profiles',
+		'cancel account',
+		'create forum content',
+		'edit own forum content',
+		'delete own forum content',
+	);
+
+	buildtapas_check_permissions_array($registered_perms);
+	return $registered_perms;
+}
+
+//======================================================================
+// Other Installation tasks.
+//======================================================================
+
 
 /**
  * Creates 'Full HTML' and 'Filtered HTML' filters
@@ -65,7 +225,6 @@ function _buildtapas_create_filter_formats() {
   $filtered_html_format = (object) $filtered_html_format;
   filter_format_save($filtered_html_format);
 }
-
 /**
  * Adds standard RDF mappings
  *
@@ -87,5 +246,3 @@ function _buildtapas_rdf() {
     rdf_mapping_save($rdf_mapping);
   }
 }
-
-
