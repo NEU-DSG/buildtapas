@@ -1,7 +1,7 @@
 
 name = Build Tapas
 description = For deploying and setting up test environments for the TAPAS website
-core = 7.43
+core = 7.50
 exclusive = true
 
 ; -----------------------------------------------------------------------------
@@ -100,7 +100,6 @@ dependencies[] = rules_scheduler
 dependencies[] = sharethis
 dependencies[] = simpletest
 dependencies[] = token
-dependencies[] = user_import
 dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_bootstrap
