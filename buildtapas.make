@@ -13,6 +13,7 @@ projects[backup_migrate][subdir] = develop
 projects[node_export][subdir]  = develop
 projects[features][subdir] = develop
 projects[features_extra][subdir] = develop
+projects[user_import][subdir] = develop
 
 ; User Management
 projects[logintoboggan][subdir] = contrib
