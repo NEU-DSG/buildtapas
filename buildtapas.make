@@ -15,6 +15,7 @@ projects[features][subdir] = develop
 projects[features_extra][subdir] = develop
 
 ; User Management
+projects[user_import][subdir] = contrib
 projects[logintoboggan][subdir] = contrib
 projects[honeypot][subdir] = contrib
 projects[mailsystem][subdir] = contrib
